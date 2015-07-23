@@ -1,0 +1,7 @@
+/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/classes/debug
+/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-4002250411d0567be96d3b8e70c4f1d3dfa32f3a.jar
+/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-58f7a1cbf3e945f047d52d63da914ef448a1be5a.jar
+/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/library-2.4.0-753b9f3276be97f301f2afb0f90285db2ef94ca9.jar
+/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-ec6a1a581fcac12740953471335757780209738e.jar
+/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-21148ba94dde2e9fffc207b1662db281ed18a108.jar
+/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-db4a2739e249235b44c1ce129c54442033bd41e0.jar

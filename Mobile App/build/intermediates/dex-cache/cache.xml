@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/abhisheksisodia/Documents/Development/android/TechDeals/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/Users/abhisheksisodia/Documents/Development/android/TechDeals/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-ddef40a4b62f38cbeb267caa00dc1d9bd8d272d3.jar" />
+    </item>
+    <item
+        jar="/Users/abhisheksisodia/Documents/Development/android/TechDeals/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/Users/abhisheksisodia/Documents/Development/android/TechDeals/app/build/intermediates/pre-dexed/debug/classes-e820296512a6138b37998756a4941674c06a80e2.jar" />
+    </item>
+    <item
+        jar="/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-db4a2739e249235b44c1ce129c54442033bd41e0.jar" />
+    </item>
+    <item
+        jar="/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/exploded-aar/com.github.blackfizz/eazegraph/1.2.2/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="2584bbecc58c666b0e064ebce64f67a46bfa2aba">
+        <dex dex="/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-58f7a1cbf3e945f047d52d63da914ef448a1be5a.jar" />
+    </item>
+    <item
+        jar="/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-21148ba94dde2e9fffc207b1662db281ed18a108.jar" />
+    </item>
+    <item
+        jar="/Volumes/Macintosh HD/Users/abhisheksisodia/Documents/Development/android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="/Users/abhisheksisodia/Documents/Development/android/TechDeals/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-4002250411d0567be96d3b8e70c4f1d3dfa32f3a.jar" />
+    </item>
+    <item
+        jar="/Users/abhisheksisodia/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/library-2.4.0-753b9f3276be97f301f2afb0f90285db2ef94ca9.jar" />
+    </item>
+    <item
+        jar="/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-ec6a1a581fcac12740953471335757780209738e.jar" />
+    </item>
+    <item
+        jar="/Users/abhisheksisodia/Documents/Development/android/TechDeals/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/abhisheksisodia/Documents/Development/android/TechDeals/app/build/intermediates/pre-dexed/debug/classes-62840e9cb1424844a6cd1f0d6535fdfbf928a309.jar" />
+    </item>
+
+</items>
