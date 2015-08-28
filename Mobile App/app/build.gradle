@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
+    compileSdkVersion 22
     buildToolsVersion "22.0.0"
 
     defaultConfig {
@@ -23,4 +23,5 @@ dependencies {
     compile 'com.google.android.gms:play-services:+'
     compile 'com.github.blackfizz:eazegraph:1.2.2@aar'
     compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.google.code.gson:gson:+'
 }
