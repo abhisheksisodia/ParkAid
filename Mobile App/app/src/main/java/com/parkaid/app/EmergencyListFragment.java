@@ -22,6 +22,7 @@ import com.google.gson.Gson;
 
 import com.google.gson.reflect.TypeToken;
 import com.parkaid.app.adapter.UserAdapter;
+import com.parkaid.app.model.DatabaseHandler;
 import com.parkaid.app.model.User;
 
 import java.lang.reflect.Type;
@@ -31,28 +32,28 @@ import java.util.List;
 public class EmergencyListFragment extends Fragment {
 
 	public EmergencyListFragment(){}
-    private Uri uriContact;
-    public Gson gson;
+    public DatabaseHandler db;
     public ArrayList<User> arrayOfUsers;
     public ListView listview;
     static final int PICK_CONTACT_REQUEST = 1;  // The request code
 
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
         setHasOptionsMenu(true);
+
         ViewGroup mainView = (ViewGroup) inflater.inflate(R.layout.fragment_emergency, container, false);
 
-        SharedPreferences appSharedPrefs = PreferenceManager
-                .getDefaultSharedPreferences(getActivity().getApplicationContext());
-        Gson gson = new Gson();
-        String contacts = appSharedPrefs.getString("EmergencyContactList", "");
+        db = new DatabaseHandler(getActivity());
+        // Reading all emergency contacts
+        ArrayList<User> contacts = db.getAllContacts();
         if (contacts.isEmpty()){
             arrayOfUsers = new ArrayList<User>();
         } else {
-            Type type = new TypeToken<List<User>>(){}.getType();
-            arrayOfUsers = gson.fromJson(contacts, type);
+            arrayOfUsers = contacts;
         }
 
         listview = (ListView) mainView.findViewById(R.id.ListView);
+        UserAdapter adapter = new UserAdapter(getActivity(), arrayOfUsers);
+        listview.setAdapter(adapter);
         return mainView;
     }
     
@@ -96,17 +97,11 @@ public class EmergencyListFragment extends Fragment {
                 String number = cursor.getString(phoneNumColumn);
                 String name = cursor.getString(nameColumn);
                 arrayOfUsers.add(new User(name, number));
+                db.addContact(new User(name, number));
             }
         }
         UserAdapter adapter = new UserAdapter(getActivity(), arrayOfUsers);
         listview.setAdapter(adapter);
-        gson = new Gson();
-        String emergencyContacts = gson.toJson(arrayOfUsers);
-        SharedPreferences appSharedPrefs = PreferenceManager
-                .getDefaultSharedPreferences(getActivity().getApplicationContext());
-        SharedPreferences.Editor prefsEditor = appSharedPrefs.edit();
-        prefsEditor.putString("EmergencyContactList", emergencyContacts);
-        prefsEditor.commit();
     }
 }
 
