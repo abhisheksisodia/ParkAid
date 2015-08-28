@@ -1,8 +1,10 @@
 package com.parkaid.app;
 
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
@@ -10,14 +12,19 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
+import android.telephony.SmsManager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import com.google.gson.Gson;
 
 import com.google.gson.reflect.TypeToken;
@@ -33,6 +40,7 @@ public class EmergencyListFragment extends Fragment {
 
 	public EmergencyListFragment(){}
     public DatabaseHandler db;
+    public UserAdapter adapter;
     public ArrayList<User> arrayOfUsers;
     public ListView listview;
     static final int PICK_CONTACT_REQUEST = 1;  // The request code
@@ -52,8 +60,49 @@ public class EmergencyListFragment extends Fragment {
         }
 
         listview = (ListView) mainView.findViewById(R.id.ListView);
-        UserAdapter adapter = new UserAdapter(getActivity(), arrayOfUsers);
+        adapter = new UserAdapter(getActivity(), arrayOfUsers);
         listview.setAdapter(adapter);
+        listview.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+
+            public boolean onItemLongClick(final AdapterView<?> arg0, View arg1,
+                                           int pos, long id) {
+                AlertDialog.Builder ad = new AlertDialog.Builder(getActivity());
+                ad.setTitle("Delete?");
+                ad.setMessage("Are you sure you want to remove from emergency list?");
+                final int positionToDelete = pos;
+                ad.setNegativeButton("Cancel", null);
+                ad.setPositiveButton("Ok", new AlertDialog.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        User deleteContact = arrayOfUsers.get(positionToDelete);
+                        arrayOfUsers.remove(positionToDelete);
+                        listview.setAdapter(adapter);
+                        db.deleteContact(deleteContact);
+                    }
+                });
+                ad.show();
+                UserAdapter adapter = new UserAdapter(getActivity(), arrayOfUsers);
+                listview.setAdapter(adapter);
+                return true;
+            }
+        });
+        listview.setLongClickable(true);
+
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String phoneNo = arrayOfUsers.get(i).getPhoneNumber();
+                try {
+                    SmsManager smsManager = SmsManager.getDefault();
+                    smsManager.sendTextMessage(phoneNo, null, "Your friend needs help! - ParkAid App", null, null);
+                } catch (Exception e) {
+                    Toast.makeText(getActivity().getApplicationContext(),
+                            "Sms Failed!",
+                            Toast.LENGTH_LONG).show();
+                    e.printStackTrace();
+                }
+
+            }
+        });
         return mainView;
     }
     
@@ -100,7 +149,7 @@ public class EmergencyListFragment extends Fragment {
                 db.addContact(new User(name, number));
             }
         }
-        UserAdapter adapter = new UserAdapter(getActivity(), arrayOfUsers);
+        adapter = new UserAdapter(getActivity(), arrayOfUsers);
         listview.setAdapter(adapter);
     }
 }
