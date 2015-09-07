@@ -92,6 +92,7 @@
     <orderEntry type="library" exported="" name="play-services-identity-7.8.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-drive-7.8.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-location-7.8.0" level="project" />
+    <orderEntry type="library" exported="" name="lib-release-1.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-nearby-7.8.0" level="project" />
     <orderEntry type="library" exported="" name="library-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-ads-7.8.0" level="project" />

@@ -252,6 +252,9 @@
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="buttonWidth">150dp</dimen>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
@@ -260,6 +263,10 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="listRowIconSize">48dp</dimen>
+    <dimen name="listRowPadding">5dp</dimen>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="mr_media_route_controller_art_max_height">320dp</dimen>
@@ -268,6 +275,14 @@
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="padding">5dp</dimen>
+    <dimen name="textSizeLarge">18sp</dimen>
+    <dimen name="textSizeMedium">15.5sp</dimen>
+    <dimen name="textSizeSmall">12sp</dimen>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
@@ -276,9 +291,37 @@
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.8.0/res/values/cast_ids.xml -->
     <eat-comment/>
     <item name="cast_notification_id" type="id"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
+    <eat-comment/>
+    <item name="db_blob_test" type="id"/>
+    <item name="db_kvp_SmartServicesState" type="id"/>
+    <item name="db_kvp_SmartWeatherCurLocWeatherReport" type="id"/>
+    <item name="db_kvp_TRNQL_SYSTEM" type="id"/>
+    <item name="db_kvp_test" type="id"/>
+    <item name="evt_ActivityHistory_added_activity" type="id"/>
+    <item name="evt_ActivityHistory_switch_accuracy" type="id"/>
+    <item name="evt_db_blob_change" type="id"/>
+    <item name="evt_db_kvp_change" type="id"/>
+    <item name="evt_debug" type="id"/>
+    <item name="evt_test" type="id"/>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <item name="home" type="id"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
+    <eat-comment/>
+    <item name="op_SmartActivity_UserActivity" type="id"/>
+    <item name="op_SmartLocation_Address" type="id"/>
+    <item name="op_SmartLocation_HighAccuracy" type="id"/>
+    <item name="op_SmartLocation_Location" type="id"/>
+    <item name="op_SmartWeather_CurLoc_Address" type="id"/>
+    <item name="op_SmartWeather_CurLoc_CurrentConditions" type="id"/>
+    <item name="op_SmartWeather_CurLoc_Theaters" type="id"/>
+    <item name="op_SmartWeather_CurLoc_Weather" type="id"/>
+    <item name="op_SmartWeather_CurLoc_WeeklyForecast" type="id"/>
+    <item name="op_SmartWeather_CurLoc_WikiArticles" type="id"/>
+    <item name="op_test" type="id"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
@@ -1334,6 +1377,28 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="CenterMediumText" parent="MediumText">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="MainButton">
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:width">@dimen/buttonWidth</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MediumText">
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:layout_margin">@dimen/padding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MyTheme" parent="android:Theme.Holo.Light">
+    </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 
@@ -1603,6 +1668,11 @@
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="TopCenterMediumText" parent="MediumText">
+        <item name="android:gravity">top|center</item>
+    </style>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.8.0/res/values/wallet_styles.xml -->
     <eat-comment/>
     <style name="WalletFragmentDefaultButtonTextAppearance">

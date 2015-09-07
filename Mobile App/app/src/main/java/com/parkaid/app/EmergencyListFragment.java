@@ -1,16 +1,11 @@
 package com.parkaid.app;
 
 import android.app.AlertDialog;
-import android.app.Fragment;
-import android.content.ContentResolver;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
 import android.telephony.SmsManager;
 import android.view.LayoutInflater;
@@ -20,23 +15,18 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
-
-import com.google.gson.reflect.TypeToken;
 import com.parkaid.app.adapter.UserAdapter;
 import com.parkaid.app.model.DatabaseHandler;
 import com.parkaid.app.model.User;
+import com.trnql.smart.base.SmartFragment;
+import com.trnql.smart.location.AddressEntry;
 
-import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.List;
 
-public class EmergencyListFragment extends Fragment {
+public class EmergencyListFragment extends SmartFragment {
 
 	public EmergencyListFragment(){}
     public DatabaseHandler db;
@@ -44,6 +34,7 @@ public class EmergencyListFragment extends Fragment {
     public ArrayList<User> arrayOfUsers;
     public ListView listview;
     static final int PICK_CONTACT_REQUEST = 1;  // The request code
+    public String userLocation;
 
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
         setHasOptionsMenu(true);
@@ -93,7 +84,7 @@ public class EmergencyListFragment extends Fragment {
                 String phoneNo = arrayOfUsers.get(i).getPhoneNumber();
                 try {
                     SmsManager smsManager = SmsManager.getDefault();
-                    smsManager.sendTextMessage(phoneNo, null, "Your friend needs help! - ParkAid App", null, null);
+                    smsManager.sendTextMessage(phoneNo, null, "Your friend needs help! The user is located at " + userLocation + "- ParkAid App", null, null);
                 } catch (Exception e) {
                     Toast.makeText(getActivity().getApplicationContext(),
                             "Sms Failed!",
@@ -105,7 +96,12 @@ public class EmergencyListFragment extends Fragment {
         });
         return mainView;
     }
-    
+
+    @Override
+    protected void smartAddressChange(AddressEntry address) {
+        userLocation = address.toString();
+    }
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);

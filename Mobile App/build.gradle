@@ -11,5 +11,9 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+
+        flatDir {
+            dirs 'libs' //locate the lib-release.aar file in libs folder
+        }
     }
 }
