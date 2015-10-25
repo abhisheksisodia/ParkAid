@@ -3,4 +3,8 @@
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/src/main/res/values-sw720dp-land/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">128dp</dimen>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.akexorcist/bluetoothspp/1.0.0/res/values-sw720dp-land-v13/values.xml -->
+    <eat-comment/>
+    <dimen name="bluetooth_spp_padding">15dp</dimen>
+    <dimen name="bluetooth_spp_text_size">30sp</dimen>
 </resources>

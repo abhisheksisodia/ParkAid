@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
@@ -26,6 +27,9 @@ public class MainActivity extends Activity {
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	private ActionBarDrawerToggle mDrawerToggle;
+
+	private static final int REQUEST_CONNECT_DEVICE_SECURE = 1;
+
 	// nav drawer title
 	private CharSequence mDrawerTitle;
 
@@ -114,17 +118,23 @@ public class MainActivity extends Activity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem miExit) {
+		Intent serverIntent = null;
 		// toggle nav drawer on selecting action bar app icon/title
 		if (mDrawerToggle.onOptionsItemSelected(miExit)) {
 			return true;
 		}
 		// Handle action bar actions click
 		switch (miExit.getItemId()) {
-		case R.id.action_settings:
-			finish();
-			return true;
-		default:
-			return super.onOptionsItemSelected(miExit);
+			case R.id.action_connect:
+				// Launch the DeviceListActivity to see devices and do scan
+				serverIntent = new Intent(this, DeviceListActivity.class);
+				startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_SECURE);
+				return true;
+			case R.id.action_settings:
+				finish();
+				return true;
+			default:
+				return super.onOptionsItemSelected(miExit);
 		}
 	}
 

@@ -10,6 +10,10 @@
     <dimen name="abc_config_prefDialogWidth">580dp</dimen>
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.akexorcist/bluetoothspp/1.0.0/res/values-sw600dp-v13/values.xml -->
+    <eat-comment/>
+    <dimen name="bluetooth_spp_padding">10dp</dimen>
+    <dimen name="bluetooth_spp_text_size">25sp</dimen>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-sw600dp/values-sw600dp.xml -->
     <eat-comment/>
     <dimen name="mr_media_route_controller_art_max_height">480dp</dimen>

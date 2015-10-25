@@ -65,7 +65,7 @@ public final class R {
 		public static final int egXAxisStroke = 0x7f01010b;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f0d0013;
+		public static final int app_name = 0x7f0d0014;
 	}
 	public static final class styleable {
 		public static final int[] BarChart = { };

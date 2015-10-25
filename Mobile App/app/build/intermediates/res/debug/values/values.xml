@@ -252,6 +252,10 @@
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.akexorcist/bluetoothspp/1.0.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="bluetooth_spp_padding">5dp</dimen>
+    <dimen name="bluetooth_spp_text_size">18sp</dimen>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="buttonWidth">150dp</dimen>
@@ -358,12 +362,16 @@
     <string name="accept">Accept</string>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="action_connect">Connect</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">ParkAid</string>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/res/values/auth_strings.xml -->
     <eat-comment/>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="button_scan">Scan for devices</string>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.8.0/res/values/cast_strings.xml -->
     <eat-comment/>
     <string name="cast_notification_connected_message">Connected to <ns1:g id="name">%1$s</ns1:g></string>
@@ -412,6 +420,7 @@
     <eat-comment/>
     <string name="drawer_close">Slider Menu Closed</string>
     <string name="drawer_open">Slider Menu Opened</string>
+    <string name="hello_world">Hello world!</string>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="mr_media_route_button_content_description">Cast</string>
@@ -426,6 +435,10 @@
     <string name="mr_user_route_category_name">Devices</string>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="none_found">No devices found</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="scanning">Scanning for devices</string>
+    <string name="select_device">Select a device to connect</string>
     <string name="settings_category_content_presentation">Content presentation</string>
     <string name="settings_category_feedback_settings">Feedback Settings</string>
     <string name="settings_display_oldest_first">Entries order</string>
@@ -440,6 +453,11 @@
     <eat-comment/>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="title_activity_device_list">DeviceListActivity</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="title_paired_devices">Paired Devices</string>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.8.0/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>

@@ -26,4 +26,5 @@ dependencies {
     compile 'com.github.blackfizz:eazegraph:1.2.2@aar'
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.google.code.gson:gson:+'
+    compile 'com.akexorcist:bluetoothspp:1.0.0'
 }

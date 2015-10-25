@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/My%20Style/My%20Blog/Android%20Code/BluetoothSPP/Library/Android-BluetoothSPPLibrary/library/src/main/res/values-sw600dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="bluetooth_spp_padding">10dp</dimen>
+    <dimen name="bluetooth_spp_text_size">25sp</dimen>
+</resources>
