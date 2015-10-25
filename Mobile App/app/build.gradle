@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
+    compileSdkVersion 23
     buildToolsVersion "22.0.0"
 
     defaultConfig {
         applicationId "com.parkaid.app"
         minSdkVersion 16
-        targetSdkVersion 19
+        targetSdkVersion 23
     }
 
     buildTypes {
@@ -21,10 +21,11 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.trnql:lib-release:1.0.0@aar'
-    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.support:support-v4:+'
     compile 'com.google.android.gms:play-services:+'
     compile 'com.github.blackfizz:eazegraph:1.2.2@aar'
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.google.code.gson:gson:+'
     compile 'com.akexorcist:bluetoothspp:1.0.0'
+    compile 'com.github.fengdai:alertdialogpro-theme-material:0.2.4'
 }

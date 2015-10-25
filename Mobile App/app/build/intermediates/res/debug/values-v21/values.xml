@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-v21/values-v21.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-v21/values-v21.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>
@@ -44,6 +44,7 @@
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Title" parent="android:TextAppearance.Material.Widget.ActionMode.Title">
     </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.Button" parent="android:TextAppearance.Material.Widget.Button"/>
     <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Large" parent="android:TextAppearance.Material.Widget.PopupMenu.Large">
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Small" parent="android:TextAppearance.Material.Widget.PopupMenu.Small">
@@ -62,13 +63,12 @@
         <!-- Action Bar styling attributes -->
         <item name="actionBarSize">?android:attr/actionBarSize</item>
         <item name="actionBarDivider">?android:attr/actionBarDivider</item>
-        <item name="actionBarItemBackground">?android:attr/actionBarItemBackground</item>
+        <item name="actionBarItemBackground">@drawable/abc_action_bar_item_background_material</item>
         <item name="actionButtonStyle">?android:attr/actionButtonStyle</item>
         <item name="actionMenuTextColor">?android:attr/actionMenuTextColor</item>
         <item name="actionMenuTextAppearance">?android:attr/actionMenuTextAppearance</item>
         <item name="actionModeBackground">?android:attr/actionModeBackground</item>
         <item name="actionModeCloseDrawable">?android:attr/actionModeCloseDrawable</item>
-        <item name="actionModeShareDrawable">?android:attr/actionModeShareDrawable</item>
         <item name="actionOverflowButtonStyle">?android:attr/actionOverflowButtonStyle</item>
         <item name="homeAsUpIndicator">?android:attr/homeAsUpIndicator</item>
 
@@ -114,13 +114,12 @@
         <!-- Action Bar styling attributes -->
         <item name="actionBarSize">?android:attr/actionBarSize</item>
         <item name="actionBarDivider">?android:attr/actionBarDivider</item>
-        <item name="actionBarItemBackground">?android:attr/actionBarItemBackground</item>
+        <item name="actionBarItemBackground">@drawable/abc_action_bar_item_background_material</item>
         <item name="actionButtonStyle">?android:attr/actionButtonStyle</item>
         <item name="actionMenuTextColor">?android:attr/actionMenuTextColor</item>
         <item name="actionMenuTextAppearance">?android:attr/actionMenuTextAppearance</item>
         <item name="actionModeBackground">?android:attr/actionModeBackground</item>
         <item name="actionModeCloseDrawable">?android:attr/actionModeCloseDrawable</item>
-        <item name="actionModeShareDrawable">?android:attr/actionModeShareDrawable</item>
         <item name="actionOverflowButtonStyle">?android:attr/actionOverflowButtonStyle</item>
         <item name="homeAsUpIndicator">?android:attr/homeAsUpIndicator</item>
 
@@ -162,6 +161,22 @@
     <style name="Base.V21.Theme.AppCompat.Light.Dialog" parent="Base.V11.Theme.AppCompat.Light.Dialog">
         <item name="android:windowElevation">@dimen/abc_floating_window_z</item>
     </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-theme-material/0.2.4/res/values-v21/values.xml -->
+    <eat-comment/>
+    <style name="Base.Widget.AlertDialogPro.Light.ListView" parent="android:Widget.Material.Light.ListView"/>
+    <style name="Base.Widget.AlertDialogPro.ListView" parent="android:Widget.Material.ListView"/>
+    <style name="Base.Widget.AlertDialogPro.Material.Button" parent="android:Widget.Material.Button.Borderless.Colored">
+        <item name="android:minHeight">@dimen/adp_mtrl_alert_dialog_button_bar_height</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="Base.Widget.AlertDialogPro.Material.Light.Button" parent="android:Widget.Material.Light.Button.Borderless.Colored">
+        <item name="android:minHeight">@dimen/adp_mtrl_alert_dialog_button_bar_height</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-v21/values-v21.xml -->
+    <eat-comment/>
     <style name="Base.Widget.AppCompat.ActionBar.TabText" parent="android:Widget.Material.ActionBar.TabText">
     </style>
     <style name="Base.Widget.AppCompat.ActionBar.TabView" parent="android:Widget.Material.ActionBar.TabView">
@@ -182,6 +197,7 @@
     <style name="Base.Widget.AppCompat.CompoundButton.CheckBox" parent="android:Widget.Material.CompoundButton.CheckBox"/>
     <style name="Base.Widget.AppCompat.CompoundButton.RadioButton" parent="android:Widget.Material.CompoundButton.RadioButton"/>
     <style name="Base.Widget.AppCompat.DropDownItem.Spinner" parent="android:Widget.Material.DropDownItem.Spinner"/>
+    <style name="Base.Widget.AppCompat.EditText" parent="android:Widget.Material.EditText"/>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="android:Widget.Material.Light.ActionBar.TabText">
     </style>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="android:Widget.Material.Light.ActionBar.TabText">
@@ -211,11 +227,6 @@
     </style>
     <style name="Base.Widget.AppCompat.RatingBar" parent="android:Widget.Material.RatingBar"/>
     <style name="Base.Widget.AppCompat.Spinner" parent="android:Widget.Material.Spinner"/>
-    <style name="Base.Widget.AppCompat.Spinner.DropDown.ActionBar" parent="android:Widget.Material.Spinner">
-        <item name="spinnerMode">dropdown</item>
-        <item name="disableChildrenWhenDisabled">true</item>
-        <item name="popupPromptView">@layout/abc_simple_dropdown_hint</item>
-    </style>
     <style name="Base.Widget.AppCompat.Spinner.Underlined" parent="android:Widget.Material.Spinner.Underlined"/>
     <style name="Base.Widget.AppCompat.TextView.SpinnerItem" parent="android:Widget.Material.TextView.SpinnerItem"/>
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="android:Widget.Material.Toolbar.Button.Navigation">
@@ -234,7 +245,7 @@
         <item name="android:buttonBarStyle">?attr/buttonBarStyle</item>
         <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
     </style>
-    <style name="Platform.ThemeOverlay.AppCompat.Dark" parent="">
+    <style name="Platform.ThemeOverlay.AppCompat" parent="">
         <!-- Copy our color theme attributes to the framework -->
         <item name="android:colorPrimary">?attr/colorPrimary</item>
         <item name="android:colorPrimaryDark">?attr/colorPrimaryDark</item>
@@ -244,14 +255,10 @@
         <item name="android:colorControlHighlight">?attr/colorControlHighlight</item>
         <item name="android:colorButtonNormal">?attr/colorButtonNormal</item>
     </style>
-    <style name="Platform.ThemeOverlay.AppCompat.Light" parent="">
-        <!-- Copy our color theme attributes to the framework -->
-        <item name="android:colorPrimary">?attr/colorPrimary</item>
-        <item name="android:colorPrimaryDark">?attr/colorPrimaryDark</item>
-        <item name="android:colorAccent">?attr/colorAccent</item>
-        <item name="android:colorControlNormal">?attr/colorControlNormal</item>
-        <item name="android:colorControlActivated">?attr/colorControlActivated</item>
-        <item name="android:colorControlHighlight">?attr/colorControlHighlight</item>
-        <item name="android:colorButtonNormal">?attr/colorButtonNormal</item>
-    </style>
+    <style name="Platform.ThemeOverlay.AppCompat.Dark"/>
+    <style name="Platform.ThemeOverlay.AppCompat.Light"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-theme-material/0.2.4/res/values-v21/values.xml -->
+    <eat-comment/>
+    <style name="Theme.AlertDialogPro.Material" parent="Base.Theme.AlertDialogPro.Material"/>
+    <style name="Theme.AlertDialogPro.Material.Light" parent="Base.Theme.AlertDialogPro.Material.Light"/>
 </resources>

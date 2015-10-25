@@ -10,6 +10,7 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -24,6 +25,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Toast;
+
+import com.alertdialogpro.AlertDialogPro;
 
 /**
  * This Activity appears as a dialog. It lists any paired devices and
@@ -226,7 +229,7 @@ public class DeviceListActivity extends Activity {
     }
 
     public void connectToDevice(String adr) {
-
+        Boolean connectionFailed = false;
         // Set up a pointer to the remote node using it's address.
         BluetoothDevice device = mBtAdapter.getRemoteDevice(adr);
 
@@ -238,6 +241,7 @@ public class DeviceListActivity extends Activity {
             btSocket = device.createRfcommSocketToServiceRecord(MY_UUID);
         } catch (IOException e) {
             errorExit("Fatal Error", "In onResume() and socket create failed: " + e.getMessage() + ".");
+            connectionFailed = true;
         }
 
         // Discovery is resource intensive.  Make sure it isn't going on
@@ -247,20 +251,45 @@ public class DeviceListActivity extends Activity {
         // Establish the connection.  This will block until it connects.
         try {
             btSocket.connect();
-
         } catch (IOException e) {
+            connectionFailed = true;
             try {
                 btSocket.close();
             } catch (IOException e2) {
                 errorExit("Fatal Error", "In onResume() and unable to close socket during connection failure" + e2.getMessage() + ".");
             }
         }
-        finish();
+        if (connectionFailed) {
+            AlertDialogPro.Builder builder = new AlertDialogPro.Builder(this);
+            builder.setTitle("Device not found").
+                    setMessage("Unable to connect to device. Please try again").
+                    setNegativeButton("Ok", new ButtonClickedListener("finishActivity")).
+                    show();
+        } else {
+            AlertDialogPro.Builder builder = new AlertDialogPro.Builder(this);
+            builder.setTitle("Device connected").
+                    setMessage("Device connected successfully.").
+                    setNegativeButton("Ok", new ButtonClickedListener("finishActivity")).
+                    show();
+        }
     }
 
     private void errorExit(String title, String message){
         Toast msg = Toast.makeText(getBaseContext(), title + " - " + message, Toast.LENGTH_SHORT);
         msg.show();
         finish();
+    }
+
+    private class ButtonClickedListener implements DialogInterface.OnClickListener {
+        private CharSequence mAction;
+
+        public ButtonClickedListener(CharSequence action) {
+            mAction = action;
+        }
+
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+            finish();
+        }
     }
 }

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-h720dp/values-h720dp.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-h720dp/values-h720dp.xml -->
     <eat-comment/>
     <dimen name="abc_alert_dialog_button_bar_height">54dip</dimen>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-theme-material/0.2.4/res/values-h720dp-v13/values.xml -->
+    <eat-comment/>
+    <dimen name="adp_mtrl_alert_dialog_button_bar_height">54dip</dimen>
 </resources>

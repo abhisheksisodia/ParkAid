@@ -31,7 +31,25 @@
         <item>3 months</item>
         <item>Forever</item>
     </string-array>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-core/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <attr format="reference" name="adpButtonBarButtonStyle"/>
+    <attr format="reference" name="adpButtonBarNegativeButtonStyle"/>
+    <attr format="reference" name="adpButtonBarNeutralButtonStyle"/>
+    <attr format="reference" name="adpButtonBarPositiveButtonStyle"/>
+    <attr format="reference" name="adpButtonBarStyle"/>
+    <attr format="reference" name="adpListDivider"/>
+    <attr format="reference" name="adpListItemBackground"/>
+    <attr format="dimension" name="adpListItemMinHeight"/>
+    <attr format="reference" name="adpListItemTextAppearance"/>
+    <attr format="reference|color" name="adpListItemTextColor"/>
+    <attr format="reference" name="adpListMultiChoiceTextAppearance"/>
+    <attr format="reference" name="adpListSingleChoiceTextAppearance"/>
+    <attr format="reference" name="adpMessageTextAppearance"/>
+    <attr format="dimension" name="adpTitleMinHeight"/>
+    <attr format="reference" name="alertDialogProStyle"/>
+    <attr format="reference" name="alertDialogProTheme"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -45,7 +63,7 @@
     <attr format="reference" name="mediaRoutePauseDrawable"/>
     <attr format="reference" name="mediaRoutePlayDrawable"/>
     <attr format="reference" name="mediaRouteSettingsDrawable"/>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="string" name="title"/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
@@ -61,10 +79,16 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <color name="background_floating_material_dark">#ff424242</color>
-    <color name="background_floating_material_light">#ffeeeeee</color>
-    <color name="background_material_dark">#ff303030</color>
-    <color name="background_material_light">#ffeeeeee</color>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-theme-material/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <color name="adp_mtrl_ripple_dark">#20ffffff</color>
+    <color name="adp_mtrl_ripple_light">#20444444</color>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="background_floating_material_dark">@color/material_grey_800</color>
+    <color name="background_floating_material_light">@android:color/white</color>
+    <color name="background_material_dark">@color/material_grey_850</color>
+    <color name="background_material_light">@color/material_grey_50</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -89,40 +113,47 @@
     <eat-comment/>
     <color name="counter_text_bg">#626262</color>
     <color name="counter_text_color">#c5c4c4</color>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
+    <color name="foreground_material_dark">@android:color/white</color>
+    <color name="foreground_material_light">@android:color/black</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
-    <color name="link_text_material_dark">@color/material_deep_teal_200</color>
-    <color name="link_text_material_light">@color/material_deep_teal_500</color>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="list_background">#303030</color>
     <color name="list_background_pressed">#992416</color>
     <color name="list_divider">#272727</color>
     <color name="list_item_title">#fff</color>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
-    <color name="primary_dark_material_dark">#ff000000</color>
-    <color name="primary_dark_material_light">#ff757575</color>
-    <color name="primary_material_dark">#ff212121</color>
-    <color name="primary_material_light">#ffefefef</color>
+    <color name="material_grey_100">#fff5f5f5</color>
+    <color name="material_grey_300">#ffe0e0e0</color>
+    <color name="material_grey_50">#fffafafa</color>
+    <color name="material_grey_600">#ff757575</color>
+    <color name="material_grey_800">#ff424242</color>
+    <color name="material_grey_850">#ff303030</color>
+    <color name="material_grey_900">#ff212121</color>
+    <color name="primary_dark_material_dark">@android:color/black</color>
+    <color name="primary_dark_material_light">@color/material_grey_600</color>
+    <color name="primary_material_dark">@color/material_grey_900</color>
+    <color name="primary_material_light">@color/material_grey_100</color>
     <color name="primary_text_default_material_dark">#ffffffff</color>
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <color name="ripple_material_dark">#4dffffff</color>
+    <color name="ripple_material_dark">#42ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
@@ -155,12 +186,14 @@
     <declare-styleable name="ActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/></declare-styleable>
     <declare-styleable name="AdsAttrs"><attr format="string" name="adSize"/><attr format="string" name="adSizes"/><attr format="string" name="adUnitId"/></declare-styleable>
     <declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/></declare-styleable>
+    <declare-styleable name="AlertDialogPro"><attr format="reference" name="adpLayout"/><attr format="reference" name="adpListLayout"/><attr format="reference" name="adpListItemLayout"/><attr format="reference" name="adpMultiChoiceItemLayout"/><attr format="reference" name="adpSingleChoiceItemLayout"/><attr format="reference" name="adpProgressLayout"/><attr format="reference" name="adpHorizontalProgressLayout"/></declare-styleable>
     <declare-styleable name="AppCompatTextView"><attr format="reference|boolean" name="textAllCaps"/><attr name="android:textAppearance"/></declare-styleable>
     <declare-styleable name="BarChart"/>
     <declare-styleable name="BaseBarChart"><attr format="boolean" name="egShowValues"/><attr format="dimension" name="egBarWidth"/><attr format="dimension" name="egBarMargin"/><attr format="boolean" name="egFixedBarWidth"/><attr format="boolean" name="egEnableScroll"/><attr format="integer" name="egVisibleBars"/></declare-styleable>
     <declare-styleable name="BaseChart"><attr format="integer" name="egAnimationTime"/><attr format="color" name="egLegendColor"/><attr format="dimension" name="egLegendHeight"/><attr format="dimension" name="egLegendTextSize"/><attr format="boolean" name="egShowDecimal"/><attr format="string" name="egEmptyDataText"/></declare-styleable>
+    <declare-styleable name="CompoundButton"><attr name="android:button"/><attr format="color" name="buttonTint"/><attr name="buttonTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="CustomWalletTheme"><attr format="enum" name="windowTransitionStyle"><enum name="slide" value="1"/><enum name="none" value="2"/></attr></declare-styleable>
-    <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="topBottomBarArrowSize"/><attr format="dimension" name="middleBarArrowSize"/><attr format="dimension" name="barSize"/><attr format="dimension" name="thickness"/></declare-styleable>
+    <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
@@ -174,25 +207,26 @@
     <declare-styleable name="PopupWindow"><attr format="boolean" name="overlapAnchor"/><attr name="android:popupBackground"/></declare-styleable>
     <declare-styleable name="PopupWindowBackgroundState"><attr format="boolean" name="state_above_anchor"/></declare-styleable>
     <declare-styleable name="SearchView"><attr format="reference" name="layout"/><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr format="string" name="defaultQueryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/><attr format="reference" name="closeIcon"/><attr format="reference" name="goIcon"/><attr format="reference" name="searchIcon"/><attr format="reference" name="searchHintIcon"/><attr format="reference" name="voiceIcon"/><attr format="reference" name="commitIcon"/><attr format="reference" name="suggestionRowLayout"/><attr format="reference" name="queryBackground"/><attr format="reference" name="submitBackground"/><attr name="android:focusable"/></declare-styleable>
-    <declare-styleable name="Spinner"><attr format="reference" name="prompt"/><attr format="enum" name="spinnerMode"><enum name="dialog" value="0"/><enum name="dropdown" value="1"/></attr><attr name="android:dropDownSelector"/><attr name="android:popupBackground"/><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/><attr name="android:dropDownWidth"/><attr format="reference" name="popupPromptView"/><attr name="android:gravity"/><attr format="boolean" name="disableChildrenWhenDisabled"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="Spinner"><attr name="android:prompt"/><attr name="popupTheme"/><attr name="android:popupBackground"/><attr name="android:dropDownWidth"/></declare-styleable>
     <declare-styleable name="StackedBarChart"><attr format="dimension" name="egBarTextSize"/><attr format="boolean" name="egShowSeparators"/><attr format="dimension" name="egSeparatorWidth"/></declare-styleable>
     <declare-styleable name="SwitchCompat"><attr name="android:thumb"/><attr format="reference" name="track"/><attr name="android:textOn"/><attr name="android:textOff"/><attr format="dimension" name="thumbTextPadding"/><attr format="reference" name="switchTextAppearance"/><attr format="dimension" name="switchMinWidth"/><attr format="dimension" name="switchPadding"/><attr format="boolean" name="splitTrack"/><attr format="boolean" name="showText"/></declare-styleable>
     <declare-styleable name="TextAppearance"><attr name="android:textSize"/><attr name="android:textColor"/><attr name="android:textStyle"/><attr name="android:typeface"/><attr name="textAllCaps"/></declare-styleable>
-    <declare-styleable name="Theme"><attr format="boolean" name="windowActionBar"/><attr format="boolean" name="windowNoTitle"/><attr format="boolean" name="windowActionBarOverlay"/><attr format="boolean" name="windowActionModeOverlay"/><attr format="dimension|fraction" name="windowFixedWidthMajor"/><attr format="dimension|fraction" name="windowFixedHeightMinor"/><attr format="dimension|fraction" name="windowFixedWidthMinor"/><attr format="dimension|fraction" name="windowFixedHeightMajor"/><attr format="dimension|fraction" name="windowMinWidthMajor"/><attr format="dimension|fraction" name="windowMinWidthMinor"/><attr name="android:windowIsFloating"/><attr name="android:windowAnimationStyle"/><attr format="reference" name="actionBarTabStyle"/><attr format="reference" name="actionBarTabBarStyle"/><attr format="reference" name="actionBarTabTextStyle"/><attr format="reference" name="actionOverflowButtonStyle"/><attr format="reference" name="actionOverflowMenuStyle"/><attr format="reference" name="actionBarPopupTheme"/><attr format="reference" name="actionBarStyle"/><attr format="reference" name="actionBarSplitStyle"/><attr format="reference" name="actionBarTheme"/><attr format="reference" name="actionBarWidgetTheme"/><attr format="dimension" name="actionBarSize"><enum name="wrap_content" value="0"/></attr><attr format="reference" name="actionBarDivider"/><attr format="reference" name="actionBarItemBackground"/><attr format="reference" name="actionMenuTextAppearance"/><attr format="color|reference" name="actionMenuTextColor"/><attr format="reference" name="actionModeStyle"/><attr format="reference" name="actionModeCloseButtonStyle"/><attr format="reference" name="actionModeBackground"/><attr format="reference" name="actionModeSplitBackground"/><attr format="reference" name="actionModeCloseDrawable"/><attr format="reference" name="actionModeCutDrawable"/><attr format="reference" name="actionModeCopyDrawable"/><attr format="reference" name="actionModePasteDrawable"/><attr format="reference" name="actionModeSelectAllDrawable"/><attr format="reference" name="actionModeShareDrawable"/><attr format="reference" name="actionModeFindDrawable"/><attr format="reference" name="actionModeWebSearchDrawable"/><attr format="reference" name="actionModePopupWindowStyle"/><attr format="reference" name="textAppearanceLargePopupMenu"/><attr format="reference" name="textAppearanceSmallPopupMenu"/><attr format="reference" name="dialogTheme"/><attr format="dimension" name="dialogPreferredPadding"/><attr format="reference" name="listDividerAlertDialog"/><attr format="reference" name="actionDropDownStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="spinnerDropDownItemStyle"/><attr format="reference" name="homeAsUpIndicator"/><attr format="reference" name="actionButtonStyle"/><attr format="reference" name="buttonBarStyle"/><attr format="reference" name="buttonBarButtonStyle"/><attr format="reference" name="selectableItemBackground"/><attr format="reference" name="selectableItemBackgroundBorderless"/><attr format="reference" name="borderlessButtonStyle"/><attr format="reference" name="dividerVertical"/><attr format="reference" name="dividerHorizontal"/><attr format="reference" name="activityChooserViewStyle"/><attr format="reference" name="toolbarStyle"/><attr format="reference" name="toolbarNavigationButtonStyle"/><attr format="reference" name="popupMenuStyle"/><attr format="reference" name="popupWindowStyle"/><attr format="reference|color" name="editTextColor"/><attr format="reference" name="editTextBackground"/><attr format="reference" name="textAppearanceSearchResultTitle"/><attr format="reference" name="textAppearanceSearchResultSubtitle"/><attr format="reference|color" name="textColorSearchUrl"/><attr format="reference" name="searchViewStyle"/><attr format="dimension" name="listPreferredItemHeight"/><attr format="dimension" name="listPreferredItemHeightSmall"/><attr format="dimension" name="listPreferredItemHeightLarge"/><attr format="dimension" name="listPreferredItemPaddingLeft"/><attr format="dimension" name="listPreferredItemPaddingRight"/><attr format="reference" name="dropDownListViewStyle"/><attr format="reference" name="listPopupWindowStyle"/><attr format="reference" name="textAppearanceListItem"/><attr format="reference" name="textAppearanceListItemSmall"/><attr format="reference" name="panelBackground"/><attr format="dimension" name="panelMenuListWidth"/><attr format="reference" name="panelMenuListTheme"/><attr format="reference" name="listChoiceBackgroundIndicator"/><attr format="color" name="colorPrimary"/><attr format="color" name="colorPrimaryDark"/><attr format="color" name="colorAccent"/><attr format="color" name="colorControlNormal"/><attr format="color" name="colorControlActivated"/><attr format="color" name="colorControlHighlight"/><attr format="color" name="colorButtonNormal"/><attr format="color" name="colorSwitchThumbNormal"/><attr format="reference" name="alertDialogStyle"/><attr format="reference" name="alertDialogButtonGroupStyle"/><attr format="boolean" name="alertDialogCenterButtons"/><attr format="reference" name="alertDialogTheme"/><attr format="reference|color" name="textColorAlertDialogListItem"/><attr format="reference" name="buttonBarPositiveButtonStyle"/><attr format="reference" name="buttonBarNegativeButtonStyle"/><attr format="reference" name="buttonBarNeutralButtonStyle"/><attr format="reference" name="autoCompleteTextViewStyle"/><attr format="reference" name="buttonStyle"/><attr format="reference" name="buttonStyleSmall"/><attr format="reference" name="checkboxStyle"/><attr format="reference" name="checkedTextViewStyle"/><attr format="reference" name="editTextStyle"/><attr format="reference" name="radioButtonStyle"/><attr format="reference" name="ratingBarStyle"/><attr format="reference" name="spinnerStyle"/><attr format="reference" name="switchStyle"/></declare-styleable>
-    <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/></declare-styleable>
+    <declare-styleable name="Theme"><attr format="boolean" name="windowActionBar"/><attr format="boolean" name="windowNoTitle"/><attr format="boolean" name="windowActionBarOverlay"/><attr format="boolean" name="windowActionModeOverlay"/><attr format="dimension|fraction" name="windowFixedWidthMajor"/><attr format="dimension|fraction" name="windowFixedHeightMinor"/><attr format="dimension|fraction" name="windowFixedWidthMinor"/><attr format="dimension|fraction" name="windowFixedHeightMajor"/><attr format="dimension|fraction" name="windowMinWidthMajor"/><attr format="dimension|fraction" name="windowMinWidthMinor"/><attr name="android:windowIsFloating"/><attr name="android:windowAnimationStyle"/><attr format="reference" name="actionBarTabStyle"/><attr format="reference" name="actionBarTabBarStyle"/><attr format="reference" name="actionBarTabTextStyle"/><attr format="reference" name="actionOverflowButtonStyle"/><attr format="reference" name="actionOverflowMenuStyle"/><attr format="reference" name="actionBarPopupTheme"/><attr format="reference" name="actionBarStyle"/><attr format="reference" name="actionBarSplitStyle"/><attr format="reference" name="actionBarTheme"/><attr format="reference" name="actionBarWidgetTheme"/><attr format="dimension" name="actionBarSize"><enum name="wrap_content" value="0"/></attr><attr format="reference" name="actionBarDivider"/><attr format="reference" name="actionBarItemBackground"/><attr format="reference" name="actionMenuTextAppearance"/><attr format="color|reference" name="actionMenuTextColor"/><attr format="reference" name="actionModeStyle"/><attr format="reference" name="actionModeCloseButtonStyle"/><attr format="reference" name="actionModeBackground"/><attr format="reference" name="actionModeSplitBackground"/><attr format="reference" name="actionModeCloseDrawable"/><attr format="reference" name="actionModeCutDrawable"/><attr format="reference" name="actionModeCopyDrawable"/><attr format="reference" name="actionModePasteDrawable"/><attr format="reference" name="actionModeSelectAllDrawable"/><attr format="reference" name="actionModeShareDrawable"/><attr format="reference" name="actionModeFindDrawable"/><attr format="reference" name="actionModeWebSearchDrawable"/><attr format="reference" name="actionModePopupWindowStyle"/><attr format="reference" name="textAppearanceLargePopupMenu"/><attr format="reference" name="textAppearanceSmallPopupMenu"/><attr format="reference" name="dialogTheme"/><attr format="dimension" name="dialogPreferredPadding"/><attr format="reference" name="listDividerAlertDialog"/><attr format="reference" name="actionDropDownStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="spinnerDropDownItemStyle"/><attr format="reference" name="homeAsUpIndicator"/><attr format="reference" name="actionButtonStyle"/><attr format="reference" name="buttonBarStyle"/><attr format="reference" name="buttonBarButtonStyle"/><attr format="reference" name="selectableItemBackground"/><attr format="reference" name="selectableItemBackgroundBorderless"/><attr format="reference" name="borderlessButtonStyle"/><attr format="reference" name="dividerVertical"/><attr format="reference" name="dividerHorizontal"/><attr format="reference" name="activityChooserViewStyle"/><attr format="reference" name="toolbarStyle"/><attr format="reference" name="toolbarNavigationButtonStyle"/><attr format="reference" name="popupMenuStyle"/><attr format="reference" name="popupWindowStyle"/><attr format="reference|color" name="editTextColor"/><attr format="reference" name="editTextBackground"/><attr format="reference" name="textAppearanceSearchResultTitle"/><attr format="reference" name="textAppearanceSearchResultSubtitle"/><attr format="reference|color" name="textColorSearchUrl"/><attr format="reference" name="searchViewStyle"/><attr format="dimension" name="listPreferredItemHeight"/><attr format="dimension" name="listPreferredItemHeightSmall"/><attr format="dimension" name="listPreferredItemHeightLarge"/><attr format="dimension" name="listPreferredItemPaddingLeft"/><attr format="dimension" name="listPreferredItemPaddingRight"/><attr format="reference" name="dropDownListViewStyle"/><attr format="reference" name="listPopupWindowStyle"/><attr format="reference" name="textAppearanceListItem"/><attr format="reference" name="textAppearanceListItemSmall"/><attr format="reference" name="panelBackground"/><attr format="dimension" name="panelMenuListWidth"/><attr format="reference" name="panelMenuListTheme"/><attr format="reference" name="listChoiceBackgroundIndicator"/><attr format="color" name="colorPrimary"/><attr format="color" name="colorPrimaryDark"/><attr format="color" name="colorAccent"/><attr format="color" name="colorControlNormal"/><attr format="color" name="colorControlActivated"/><attr format="color" name="colorControlHighlight"/><attr format="color" name="colorButtonNormal"/><attr format="color" name="colorSwitchThumbNormal"/><attr format="reference" name="controlBackground"/><attr format="reference" name="alertDialogStyle"/><attr format="reference" name="alertDialogButtonGroupStyle"/><attr format="boolean" name="alertDialogCenterButtons"/><attr format="reference" name="alertDialogTheme"/><attr format="reference|color" name="textColorAlertDialogListItem"/><attr format="reference" name="buttonBarPositiveButtonStyle"/><attr format="reference" name="buttonBarNegativeButtonStyle"/><attr format="reference" name="buttonBarNeutralButtonStyle"/><attr format="reference" name="autoCompleteTextViewStyle"/><attr format="reference" name="buttonStyle"/><attr format="reference" name="buttonStyleSmall"/><attr format="reference" name="checkboxStyle"/><attr format="reference" name="checkedTextViewStyle"/><attr format="reference" name="editTextStyle"/><attr format="reference" name="radioButtonStyle"/><attr format="reference" name="ratingBarStyle"/><attr format="reference" name="spinnerStyle"/><attr format="reference" name="switchStyle"/></declare-styleable>
+    <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/><attr name="logo"/><attr format="string" name="logoDescription"/><attr format="color" name="titleTextColor"/><attr format="color" name="subtitleTextColor"/></declare-styleable>
     <declare-styleable name="ValueLineChart"><attr format="float" name="egCurveSmoothness"/><attr format="boolean" name="egUseCubic"/><attr format="boolean" name="egUseOverlapFill"/><attr format="dimension" name="egLineStroke"/><attr format="boolean" name="egShowValueIndicator"/><attr format="dimension" name="egIndicatorWidth"/><attr format="color" name="egIndicatorLineColor"/><attr format="color" name="egIndicatorTextColor"/><attr format="dimension" name="egIndicatorTextSize"/><attr format="dimension" name="egIndicatorLeftPadding"/><attr format="dimension" name="egIndicatorTopPadding"/><attr format="boolean" name="egShowStandardValue"/><attr format="dimension" name="egXAxisStroke"/><attr format="boolean" name="egActivateIndicatorShadow"/><attr format="dimension" name="egIndicatorShadowStrength"/><attr format="color" name="egIndicatorShadowColor"/><attr format="string" name="egIndicatorTextUnit"/><attr format="boolean" name="egShowLegendBeneathIndicator"/><attr format="boolean" name="egUseDynamicScaling"/><attr format="float" name="egScalingFactor"/><attr format="float" name="egMaxXZoom"/><attr format="float" name="egMaxYZoom"/></declare-styleable>
     <declare-styleable name="VerticalBarChart"><attr format="boolean" name="egUseMaximumValue"/><attr format="float" name="egMaximumValue"/><attr format="string" name="egValueUnit"/><attr format="boolean" name="egShowBarLabel"/><attr format="color" name="egBarLabelColor"/></declare-styleable>
-    <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
+    <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/></declare-styleable>
+    <declare-styleable name="ViewBackgroundHelper"><attr name="android:background"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
     <declare-styleable name="WalletFragmentOptions"><attr format="enum" name="appTheme"><enum name="holo_dark" value="0"/><enum name="holo_light" value="1"/></attr><attr format="enum" name="environment"><enum name="production" value="1"/><enum name="test" value="3"/><enum name="sandbox" value="0"/><enum name="strict_sandbox" value="2"/></attr><attr format="reference" name="fragmentStyle"/><attr format="enum" name="fragmentMode"><enum name="buyButton" value="1"/><enum name="selectionDetails" value="2"/></attr></declare-styleable>
     <declare-styleable name="WalletFragmentStyle"><attr format="dimension" name="buyButtonHeight"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="dimension" name="buyButtonWidth"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="enum" name="buyButtonText"><enum name="buy_with" value="5"/><enum name="logo_only" value="6"/><enum name="donate_with" value="7"/><enum name="buy_with_google" value="1"/><enum name="buy_now" value="2"/><enum name="book_now" value="3"/><enum name="donate_with_google" value="4"/></attr><attr format="enum" name="buyButtonAppearance"><enum name="google_wallet_classic" value="1"/><enum name="google_wallet_grayscale" value="2"/><enum name="google_wallet_monochrome" value="3"/><enum name="classic" value="1"/><enum name="grayscale" value="2"/><enum name="monochrome" value="3"/></attr><attr format="reference" name="maskedWalletDetailsTextAppearance"/><attr format="reference" name="maskedWalletDetailsHeaderTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsBackground"/><attr format="reference" name="maskedWalletDetailsButtonTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsButtonBackground"/><attr format="color" name="maskedWalletDetailsLogoTextColor"/><attr format="enum" name="maskedWalletDetailsLogoImageType"><enum name="google_wallet_classic" value="1"/><enum name="google_wallet_monochrome" value="2"/><enum name="classic" value="1"/><enum name="monochrome" value="2"/></attr></declare-styleable>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
-    <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
+    <dimen name="abc_action_bar_default_padding_end_material">0dp</dimen>
+    <dimen name="abc_action_bar_default_padding_start_material">0dp</dimen>
     <dimen name="abc_action_bar_icon_vertical_padding_material">16dp</dimen>
-    <dimen name="abc_action_bar_navigation_padding_start_material">0dp</dimen>
     <dimen name="abc_action_bar_overflow_padding_end_material">10dp</dimen>
     <dimen name="abc_action_bar_overflow_padding_start_material">6dp</dimen>
     <dimen name="abc_action_bar_progress_bar_size">40dp</dimen>
@@ -252,6 +286,18 @@
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-theme-material/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="adp_mtrl_alert_dialog_button_bar_height">48dip</dimen>
+    <dimen name="adp_mtrl_alert_dialog_padding">24dp</dimen>
+    <dimen name="adp_mtrl_alert_dialog_padding_top">18dp</dimen>
+    <dimen name="adp_mtrl_button_inset_horizontal">@dimen/adp_mtrl_control_inset</dimen>
+    <dimen name="adp_mtrl_button_inset_vertical">6dp</dimen>
+    <dimen name="adp_mtrl_button_padding_horizontal">8dp</dimen>
+    <dimen name="adp_mtrl_button_padding_vertical">@dimen/adp_mtrl_control_padding</dimen>
+    <dimen name="adp_mtrl_control_corner">2dp</dimen>
+    <dimen name="adp_mtrl_control_inset">4dp</dimen>
+    <dimen name="adp_mtrl_control_padding">4dp</dimen>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.akexorcist/bluetoothspp/1.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="bluetooth_spp_padding">5dp</dimen>
@@ -259,7 +305,7 @@
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="buttonWidth">150dp</dimen>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -267,6 +313,9 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
+    <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
+    <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="listRowIconSize">48dp</dimen>
@@ -274,7 +323,7 @@
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="mr_media_route_controller_art_max_height">320dp</dimen>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
@@ -285,13 +334,36 @@
     <dimen name="textSizeLarge">18sp</dimen>
     <dimen name="textSizeMedium">15.5sp</dimen>
     <dimen name="textSizeSmall">12sp</dimen>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-core/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <item name="adp_alertTitle" type="id"/>
+    <item name="adp_button1" type="id"/>
+    <item name="adp_button2" type="id"/>
+    <item name="adp_button3" type="id"/>
+    <item name="adp_buttonPanel" type="id"/>
+    <item name="adp_contentPanel" type="id"/>
+    <item name="adp_custom" type="id"/>
+    <item name="adp_customPanel" type="id"/>
+    <item name="adp_icon" type="id"/>
+    <item name="adp_message" type="id"/>
+    <item name="adp_parentPanel" type="id"/>
+    <item name="adp_progress" type="id"/>
+    <item name="adp_progress_number" type="id"/>
+    <item name="adp_progress_percent" type="id"/>
+    <item name="adp_scrollView" type="id"/>
+    <item name="adp_select_dialog_listview" type="id"/>
+    <item name="adp_textSpacerNoButtons" type="id"/>
+    <item name="adp_titleDivider" type="id"/>
+    <item name="adp_titleDividerTop" type="id"/>
+    <item name="adp_title_template" type="id"/>
+    <item name="adp_topPanel" type="id"/>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.8.0/res/values/cast_ids.xml -->
     <eat-comment/>
     <item name="cast_notification_id" type="id"/>
@@ -308,7 +380,7 @@
     <item name="evt_db_kvp_change" type="id"/>
     <item name="evt_debug" type="id"/>
     <item name="evt_test" type="id"/>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="home" type="id"/>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
@@ -324,7 +396,7 @@
     <item name="op_SmartWeather_CurLoc_WeeklyForecast" type="id"/>
     <item name="op_SmartWeather_CurLoc_WikiArticles" type="id"/>
     <item name="op_test" type="id"/>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
@@ -337,7 +409,7 @@
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/res/values/version.xml -->
     <eat-comment/>
     <integer name="google_play_services_version">7895000</integer>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -411,6 +483,9 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="connecting">Trying to Connect</string>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
@@ -446,7 +521,7 @@
     <string name="settings_feedback_type">Select Feedback Type</string>
     <string name="settings_font_size">Text size</string>
     <string name="settings_keep_time">Time that the entries will be kept</string>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/res/values/admob_strings.xml -->
@@ -461,10 +536,47 @@
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.8.0/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-core/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="AlertDialogPro">
+        <!-- The core library has no default style -->
+        <item name="adpLayout">@null</item>
+        <item name="adpProgressLayout">@null</item>
+        <item name="adpHorizontalProgressLayout">@null</item>
+        <item name="adpListLayout">@null</item>
+        <item name="adpListItemLayout">@null</item>
+        <item name="adpMultiChoiceItemLayout">@null</item>
+        <item name="adpSingleChoiceItemLayout">@null</item>
+    </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-theme-material/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="AlertDialogPro.Material">
+        <item name="adpLayout">@layout/adp_alert_dialog_material</item>
+        <item name="adpProgressLayout">@layout/adp_progress_dialog_material</item>
+        <item name="adpHorizontalProgressLayout">@layout/adp_progress_dialog_horizontal_material</item>
+        <item name="adpListLayout">@layout/adp_select_dialog_material</item>
+        <item name="adpListItemLayout">@layout/adp_select_dialog_item_material</item>
+        <item name="adpMultiChoiceItemLayout">@layout/adp_select_dialog_multichoice_material</item>
+        <item name="adpSingleChoiceItemLayout">@layout/adp_select_dialog_singlechoice_material
+        </item>
+    </style>
+    <style name="AlertDialogPro.Material.Light"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-core/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Animation.AlertDialogPro" parent="android:Animation"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-theme-material/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Animation.AlertDialogPro.Material"/>
+    <style name="Animation.AlertDialogPro.Material.Dialog">
+        <item name="android:windowEnterAnimation">@anim/adp_popup_enter_material</item>
+        <item name="android:windowExitAnimation">@anim/adp_popup_exit_material</item>
+    </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/src/main/res/values/styles.xml -->
@@ -475,11 +587,13 @@
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
+        <item name="alertDialogProTheme">@style/Theme.AlertDialogPro.Material.Light</item>
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="alertDialogProTheme">@style/Theme.AlertDialogPro.Material.Light</item>
     </style>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -605,7 +719,7 @@
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Subhead.Inverse">
-        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
         <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Title">
@@ -616,28 +730,31 @@
         <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
         <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="android:TextAppearance.Small">
-        <item name="android:textSize">12sp</item>
-        <item name="android:textStyle">bold</item>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="TextAppearance.AppCompat.Menu">
         <item name="android:textColor">?attr/actionMenuTextColor</item>
+        <item name="textAllCaps">@bool/abc_config_actionMenuItemAllCaps</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle" parent="TextAppearance.AppCompat.Subhead">
         <item name="android:textSize">@dimen/abc_text_size_subtitle_material_toolbar</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="TextAppearance.AppCompat.Subhead.Inverse">
         <item name="android:textSize">@dimen/abc_text_size_subtitle_material_toolbar</item>
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title" parent="TextAppearance.AppCompat.Title">
         <item name="android:textSize">@dimen/abc_text_size_title_material_toolbar</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="TextAppearance.AppCompat.Title.Inverse">
         <item name="android:textSize">@dimen/abc_text_size_title_material_toolbar</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle" parent="TextAppearance.AppCompat.Subhead">
-        <item name="android:textSize">@dimen/abc_text_size_subtitle_material_toolbar</item>
-    </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Title" parent="TextAppearance.AppCompat.Title">
-        <item name="android:textSize">@dimen/abc_text_size_title_material_toolbar</item>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle"/>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+    <style name="Base.TextAppearance.AppCompat.Widget.Button" parent="TextAppearance.AppCompat.Button"/>
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.DropDownItem" parent="android:TextAppearance.Small">
         <item name="android:textColor">?android:attr/textColorPrimaryDisableOnly</item>
@@ -655,6 +772,103 @@
     </style>
     <style name="Base.TextAppearance.Widget.AppCompat.Toolbar.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
     </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-core/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Base.Theme.AlertDialogPro" parent="Theme.AppCompat.Dialog"/>
+    <style name="Base.Theme.AlertDialogPro.Light" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="buttonBarStyle">@android:style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@android:style/Widget.Button</item>
+
+        <!-- Window colors -->
+        <item name="android:colorForeground">@color/bright_foreground_material_light</item>
+        <item name="android:colorForegroundInverse">@color/bright_foreground_material_dark</item>
+        <item name="android:colorBackground">@color/background_material_light</item>
+        <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_light</item>
+        <item name="android:disabledAlpha">0.5</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@color/background_material_light</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/abc_primary_text_material_light</item>
+        <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_dark</item>
+        <item name="android:textColorSecondary">@color/abc_secondary_text_material_light</item>
+        <item name="android:textColorSecondaryInverse">@color/abc_secondary_text_material_dark</item>
+        <item name="android:textColorTertiary">@color/abc_secondary_text_material_light</item>
+        <item name="android:textColorTertiaryInverse">@color/abc_secondary_text_material_dark</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/abc_primary_text_disable_only_material_light</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">@color/abc_primary_text_disable_only_material_dark</item>
+        <item name="android:textColorHint">@color/hint_foreground_material_light</item>
+        <item name="android:textColorHintInverse">@color/hint_foreground_material_dark</item>
+        <item name="android:textColorHighlight">@color/highlighted_text_material_light</item>
+        <item name="android:textColorLink">?attr/colorAccent</item>
+
+        <!-- Text styles -->
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+        <item name="android:textAppearanceInverse">@style/TextAppearance.AppCompat.Inverse</item>
+        <item name="android:textAppearanceLarge">@style/TextAppearance.AppCompat.Large</item>
+        <item name="android:textAppearanceLargeInverse">@style/TextAppearance.AppCompat.Large.Inverse</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textAppearanceMediumInverse">@style/TextAppearance.AppCompat.Medium.Inverse</item>
+        <item name="android:textAppearanceSmall">@style/TextAppearance.AppCompat.Small</item>
+        <item name="android:textAppearanceSmallInverse">@style/TextAppearance.AppCompat.Small.Inverse</item>
+        <item name="android:spinnerStyle">@style/Widget.AppCompat.Spinner</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/abc_btn_radio_material</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
+    </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-theme-material/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Base.Theme.AlertDialogPro.Material" parent="Theme.AlertDialogPro">
+        <!-- Animation -->
+        <item name="android:windowAnimationStyle">@style/Animation.AlertDialogPro.Material.Dialog</item>
+        <!-- Background -->
+        <item name="android:windowBackground">@drawable/adp_dialog_background_material_dark</item>
+        <!-- Title -->
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.AlertDialogPro.Material</item>
+        <item name="adpTitleMinHeight">0dp</item>
+        <!-- Message -->
+        <item name="adpMessageTextAppearance">@style/TextAppearance.AlertDialogPro.Material.Subhead</item>
+        <!-- ListView -->
+        <item name="adpListItemMinHeight">48dip</item>
+        <item name="adpListItemTextColor">?android:attr/textColorPrimary</item>
+        <item name="adpListItemTextAppearance">@style/TextAppearance.AlertDialogPro.Material.Subhead</item>
+        <item name="adpListSingleChoiceTextAppearance">@style/TextAppearance.AlertDialogPro.Material.ListChoice</item>
+        <item name="adpListMultiChoiceTextAppearance">@style/TextAppearance.AlertDialogPro.Material.ListChoice</item>
+        <item name="adpListItemBackground">@drawable/adp_item_background_material_dark</item>
+        <item name="adpListDivider">@null</item>
+        <item name="android:listViewStyle">@style/Widget.AlertDialogPro.Material.ListView</item>
+        <!-- ButtonBar-->
+        <item name="adpButtonBarStyle">@style/Widget.AlertDialogPro.Material.ButtonBar</item>
+        <item name="adpButtonBarButtonStyle">@style/Widget.AlertDialogPro.Material.Button</item>
+        <item name="alertDialogProStyle">@style/AlertDialogPro.Material</item>
+    </style>
+    <style name="Base.Theme.AlertDialogPro.Material.Light" parent="Theme.AlertDialogPro.Light">
+        <!-- Animation -->
+        <item name="android:windowAnimationStyle">@style/Animation.AlertDialogPro.Material.Dialog</item>
+        <!-- Background -->
+        <item name="android:windowBackground">@drawable/adp_dialog_background_material_light</item>
+        <!-- Title -->
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.AlertDialogPro.Material.Light</item>
+        <item name="adpTitleMinHeight">0dp</item>
+        <!-- Message -->
+        <item name="adpMessageTextAppearance">@style/TextAppearance.AlertDialogPro.Material.Subhead</item>
+        <!-- ListView -->
+        <item name="adpListItemMinHeight">48dip</item>
+        <item name="adpListItemTextColor">?android:attr/textColorPrimary</item>
+        <item name="adpListItemTextAppearance">@style/TextAppearance.AlertDialogPro.Material.Subhead</item>
+        <item name="adpListSingleChoiceTextAppearance">@style/TextAppearance.AlertDialogPro.Material.ListChoice</item>
+        <item name="adpListMultiChoiceTextAppearance">@style/TextAppearance.AlertDialogPro.Material.ListChoice</item>
+        <item name="adpListItemBackground">@drawable/adp_item_background_material_light</item>
+        <item name="adpListDivider">@null</item>
+        <item name="android:listViewStyle">@style/Widget.AlertDialogPro.Material.Light.ListView</item>
+        <!-- ButtonBar-->
+        <item name="adpButtonBarStyle">@style/Widget.AlertDialogPro.Material.ButtonBar</item>
+        <item name="adpButtonBarButtonStyle">@style/Widget.AlertDialogPro.Material.Light.Button</item>
+        <item name="alertDialogProStyle">@style/AlertDialogPro.Material.Light</item>
+    </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="Base.Theme.AppCompat" parent="Base.V7.Theme.AppCompat">
     </style>
     <style name="Base.Theme.AppCompat.CompactMenu" parent="">
@@ -707,15 +921,15 @@
         <item name="windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
     </style>
     <style name="Base.Theme.AppCompat.Light.DialogWhenLarge" parent="Theme.AppCompat.Light"/>
-    <style name="Base.ThemeOverlay.AppCompat" parent=""/>
+    <style name="Base.ThemeOverlay.AppCompat" parent="Platform.ThemeOverlay.AppCompat"/>
     <style name="Base.ThemeOverlay.AppCompat.ActionBar">
         <item name="colorControlNormal">?android:attr/textColorPrimary</item>
         <item name="searchViewStyle">@style/Widget.AppCompat.SearchView.ActionBar</item>
     </style>
-    <style name="Base.ThemeOverlay.AppCompat.Dark">
+    <style name="Base.ThemeOverlay.AppCompat.Dark" parent="Platform.ThemeOverlay.AppCompat.Dark">
         <item name="android:windowBackground">@color/background_material_dark</item>
-        <item name="android:colorForeground">@color/bright_foreground_material_dark</item>
-        <item name="android:colorForegroundInverse">@color/bright_foreground_material_light</item>
+        <item name="android:colorForeground">@color/foreground_material_dark</item>
+        <item name="android:colorForegroundInverse">@color/foreground_material_light</item>
         <item name="android:colorBackground">@color/background_material_dark</item>
         <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_dark</item>
 
@@ -729,7 +943,6 @@
         <item name="android:textColorHint">@color/hint_foreground_material_dark</item>
         <item name="android:textColorHintInverse">@color/hint_foreground_material_light</item>
         <item name="android:textColorHighlight">@color/highlighted_text_material_dark</item>
-        <item name="android:textColorLink">@color/link_text_material_dark</item>
 
         <item name="colorControlNormal">?android:attr/textColorSecondary</item>
         <item name="colorControlHighlight">@color/ripple_material_dark</item>
@@ -745,8 +958,8 @@
     </style>
     <style name="Base.ThemeOverlay.AppCompat.Light" parent="Platform.ThemeOverlay.AppCompat.Light">
         <item name="android:windowBackground">@color/background_material_light</item>
-        <item name="android:colorForeground">@color/bright_foreground_material_light</item>
-        <item name="android:colorForegroundInverse">@color/bright_foreground_material_dark</item>
+        <item name="android:colorForeground">@color/foreground_material_light</item>
+        <item name="android:colorForegroundInverse">@color/foreground_material_dark</item>
         <item name="android:colorBackground">@color/background_material_light</item>
         <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_light</item>
 
@@ -761,7 +974,6 @@
         <item name="android:textColorHint">@color/hint_foreground_material_light</item>
         <item name="android:textColorHintInverse">@color/hint_foreground_material_dark</item>
         <item name="android:textColorHighlight">@color/highlighted_text_material_light</item>
-        <item name="android:textColorLink">@color/link_text_material_light</item>
 
         <item name="colorControlNormal">?android:attr/textColorSecondary</item>
         <item name="colorControlHighlight">@color/ripple_material_light</item>
@@ -774,6 +986,7 @@
     <style name="Base.V7.Theme.AppCompat" parent="Platform.AppCompat">
         <item name="windowActionBar">true</item>
         <item name="windowActionBarOverlay">false</item>
+        <item name="actionBarPopupTheme">@null</item>
 
         <!-- Used by MediaRouter -->
         <item name="isLightTheme">false</item>
@@ -880,6 +1093,7 @@
         <item name="colorControlHighlight">@color/ripple_material_dark</item>
         <item name="colorButtonNormal">@color/button_material_dark</item>
         <item name="colorSwitchThumbNormal">@color/switch_thumb_material_dark</item>
+        <item name="controlBackground">?attr/selectableItemBackgroundBorderless</item>
 
         <item name="drawerArrowStyle">@style/Widget.AppCompat.DrawerArrowToggle</item>
 
@@ -892,7 +1106,7 @@
         <!-- Button styles -->
         <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
         <item name="buttonStyleSmall">@style/Widget.AppCompat.Button.Small</item>
-        <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Button</item>
+        <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Widget.Button</item>
 
         <item name="buttonBarStyle">@style/Widget.AppCompat.ButtonBar</item>
         <item name="buttonBarButtonStyle">@style/Widget.AppCompat.Button.ButtonBar.AlertDialog</item>
@@ -942,6 +1156,7 @@
     <style name="Base.V7.Theme.AppCompat.Light" parent="Platform.AppCompat.Light">
         <item name="windowActionBar">true</item>
         <item name="windowActionBarOverlay">false</item>
+        <item name="actionBarPopupTheme">@null</item>
 
         <!-- Used by MediaRouter -->
         <item name="isLightTheme">true</item>
@@ -1048,6 +1263,7 @@
         <item name="colorControlHighlight">@color/ripple_material_light</item>
         <item name="colorButtonNormal">@color/button_material_light</item>
         <item name="colorSwitchThumbNormal">@color/switch_thumb_material_light</item>
+        <item name="controlBackground">?attr/selectableItemBackgroundBorderless</item>
 
         <item name="drawerArrowStyle">@style/Widget.AppCompat.DrawerArrowToggle</item>
 
@@ -1060,7 +1276,7 @@
         <!-- Button styles -->
         <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
         <item name="buttonStyleSmall">@style/Widget.AppCompat.Button.Small</item>
-        <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Button</item>
+        <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Widget.Button</item>
 
         <item name="buttonBarStyle">@style/Widget.AppCompat.ButtonBar</item>
         <item name="buttonBarButtonStyle">@style/Widget.AppCompat.Button.ButtonBar.AlertDialog</item>
@@ -1119,6 +1335,34 @@
         <item name="android:textColor">?attr/editTextColor</item>
         <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
     </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-theme-material/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Base.Widget.AlertDialogPro.Light.ListView" parent="android:Widget.ListView">
+        <item name="android:listSelector">?attr/adpListItemBackground</item>
+    </style>
+    <style name="Base.Widget.AlertDialogPro.ListView" parent="android:Widget.ListView">
+        <item name="android:listSelector">?attr/adpListItemBackground</item>
+    </style>
+    <style name="Base.Widget.AlertDialogPro.Material.Button" parent="android:Widget.Button">
+        <item name="android:background">@drawable/adp_btn_mtrl_dark</item>
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:minHeight">@dimen/adp_mtrl_alert_dialog_button_bar_height</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:maxLines">2</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="Base.Widget.AlertDialogPro.Material.Light.Button" parent="android:Widget.Button">
+        <item name="android:background">@drawable/adp_btn_mtrl_light</item>
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:minHeight">@dimen/adp_mtrl_alert_dialog_button_bar_height</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:maxLines">2</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="Base.Widget.AppCompat.ActionBar" parent="">
         <item name="displayOptions">showTitle</item>
         <item name="divider">?attr/dividerVertical</item>
@@ -1181,8 +1425,7 @@
         <item name="textAllCaps">@bool/abc_config_actionMenuItemAllCaps</item>
     </style>
     <style name="Base.Widget.AppCompat.ActionButton.CloseMode">
-        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
-        <item name="android:minWidth">56dp</item>
+        <item name="android:background">?attr/controlBackground</item>
     </style>
     <style name="Base.Widget.AppCompat.ActionButton.Overflow">
         <item name="android:src">@drawable/abc_ic_menu_moreoverflow_mtrl_alpha</item>
@@ -1227,6 +1470,10 @@
         <item name="android:maxLines">2</item>
         <item name="android:minHeight">@dimen/abc_alert_dialog_button_bar_height</item>
     </style>
+    <style name="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/abc_btn_colored_material</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.Button.Inverse</item>
+    </style>
     <style name="Base.Widget.AppCompat.Button.Small">
         <item name="android:minHeight">48dip</item>
         <item name="android:minWidth">48dip</item>
@@ -1234,36 +1481,34 @@
     <style name="Base.Widget.AppCompat.ButtonBar" parent="android:Widget">
         <item name="android:background">@null</item>
     </style>
-    <style name="Base.Widget.AppCompat.ButtonBar.AlertDialog">
-        <item name="android:background">@null</item>
-    </style>
+    <style name="Base.Widget.AppCompat.ButtonBar.AlertDialog"/>
     <style name="Base.Widget.AppCompat.CompoundButton.CheckBox" parent="android:Widget.CompoundButton.CheckBox">
         <item name="android:button">?android:attr/listChoiceIndicatorMultiple</item>
-        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:background">?attr/controlBackground</item>
     </style>
     <style name="Base.Widget.AppCompat.CompoundButton.RadioButton" parent="android:Widget.CompoundButton.RadioButton">
         <item name="android:button">?android:attr/listChoiceIndicatorSingle</item>
-        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:background">?attr/controlBackground</item>
     </style>
     <style name="Base.Widget.AppCompat.CompoundButton.Switch" parent="android:Widget.CompoundButton">
         <item name="track">@drawable/abc_switch_track_mtrl_alpha</item>
         <item name="android:thumb">@drawable/abc_switch_thumb_material</item>
         <item name="switchTextAppearance">@style/TextAppearance.AppCompat.Widget.Switch</item>
-        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:background">?attr/controlBackground</item>
         <item name="showText">false</item>
         <item name="switchPadding">@dimen/abc_switch_padding</item>
     </style>
     <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle.Common">
-        <item name="barSize">18dp</item>
+        <item name="barLength">18dp</item>
         <item name="gapBetweenBars">3dp</item>
         <item name="drawableSize">24dp</item>
     </style>
     <style name="Base.Widget.AppCompat.DrawerArrowToggle.Common" parent="">
         <item name="color">?android:attr/textColorSecondary</item>
-        <item name="middleBarArrowSize">16dp</item>
         <item name="spinBars">true</item>
         <item name="thickness">2dp</item>
-        <item name="topBottomBarArrowSize">11.31dp</item>
+        <item name="arrowShaftLength">16dp</item>
+        <item name="arrowHeadLength">8dp</item>
     </style>
     <style name="Base.Widget.AppCompat.DropDownItem.Spinner" parent="">
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.DropDownItem</item>
@@ -1352,25 +1597,16 @@
         <item name="searchHintIcon">@null</item>
         <item name="defaultQueryHint">@string/abc_search_hint</item>
     </style>
-    <style name="Base.Widget.AppCompat.Spinner" parent="android:Widget.Spinner">
+    <style name="Base.Widget.AppCompat.Spinner" parent="Platform.Widget.AppCompat.Spinner">
         <item name="android:background">@drawable/abc_spinner_mtrl_am_alpha</item>
-        <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
-        <item name="android:dropDownVerticalOffset">0dip</item>
-    </style>
-    <style name="Base.Widget.AppCompat.Spinner.DropDown.ActionBar" parent="android:Widget">
-        <item name="spinnerMode">dropdown</item>
-
-        <item name="android:clickable">true</item>
-        <item name="android:background">@drawable/abc_spinner_mtrl_am_alpha</item>
-        <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
         <item name="android:popupBackground">@drawable/abc_popup_background_mtrl_mult</item>
+        <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
         <item name="android:dropDownVerticalOffset">0dip</item>
         <item name="android:dropDownHorizontalOffset">0dip</item>
-        <item name="overlapAnchor">true</item>
         <item name="android:dropDownWidth">wrap_content</item>
-        <item name="popupPromptView">@layout/abc_simple_dropdown_hint</item>
+        <item name="android:clickable">true</item>
         <item name="android:gravity">left|start|center_vertical</item>
-        <item name="disableChildrenWhenDisabled">true</item>
+        <item name="overlapAnchor">true</item>
     </style>
     <style name="Base.Widget.AppCompat.Spinner.Underlined">
         <item name="android:background">@drawable/abc_spinner_textfield_background_material</item>
@@ -1389,17 +1625,39 @@
         <item name="collapseIcon">?attr/homeAsUpIndicator</item>
         <item name="collapseContentDescription">@string/abc_toolbar_collapse_description</item>
         <item name="contentInsetStart">16dp</item>
+        <item name="android:paddingLeft">@dimen/abc_action_bar_default_padding_start_material</item>
+        <item name="android:paddingRight">@dimen/abc_action_bar_default_padding_end_material</item>
     </style>
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="android:Widget">
+        <item name="android:background">?attr/controlBackground</item>
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
-        <item name="android:background">?attr/selectableItemBackground</item>
     </style>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="CenterMediumText" parent="MediumText">
         <item name="android:gravity">center</item>
     </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-core/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="DialogWindowTitle.AlertDialogPro" parent="">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.AlertDialogPro.DialogWindowTitle
+        </item>
+    </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-theme-material/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="DialogWindowTitle.AlertDialogPro.Material">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">
+            @style/TextAppearance.AlertDialogPro.Material.DialogWindowTitle
+        </item>
+    </style>
+    <style name="DialogWindowTitle.AlertDialogPro.Material.Light"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="MainButton">
         <item name="android:textSize">@dimen/textSizeMedium</item>
         <item name="android:layout_gravity">center</item>
@@ -1415,14 +1673,14 @@
     </style>
     <style name="MyTheme" parent="android:Theme.Holo.Light">
     </style>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 
         <!-- Window colors -->
-        <item name="android:colorForeground">@color/bright_foreground_material_dark</item>
-        <item name="android:colorForegroundInverse">@color/bright_foreground_material_light</item>
+        <item name="android:colorForeground">@color/foreground_material_dark</item>
+        <item name="android:colorForegroundInverse">@color/foreground_material_light</item>
         <item name="android:colorBackground">@color/background_material_dark</item>
         <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_dark</item>
         <item name="android:disabledAlpha">@dimen/abc_disabled_alpha_material_dark</item>
@@ -1440,7 +1698,7 @@
         <item name="android:textColorHint">@color/hint_foreground_material_dark</item>
         <item name="android:textColorHintInverse">@color/hint_foreground_material_light</item>
         <item name="android:textColorHighlight">@color/highlighted_text_material_dark</item>
-        <item name="android:textColorLink">@color/link_text_material_dark</item>
+        <item name="android:textColorLink">?attr/colorAccent</item>
 
         <!-- Text styles -->
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
@@ -1459,8 +1717,8 @@
         <item name="android:windowNoTitle">true</item>
 
         <!-- Window colors -->
-        <item name="android:colorForeground">@color/bright_foreground_material_light</item>
-        <item name="android:colorForegroundInverse">@color/bright_foreground_material_dark</item>
+        <item name="android:colorForeground">@color/foreground_material_light</item>
+        <item name="android:colorForegroundInverse">@color/foreground_material_dark</item>
         <item name="android:colorBackground">@color/background_material_light</item>
         <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_light</item>
         <item name="android:disabledAlpha">@dimen/abc_disabled_alpha_material_light</item>
@@ -1479,7 +1737,7 @@
         <item name="android:textColorHint">@color/hint_foreground_material_light</item>
         <item name="android:textColorHintInverse">@color/hint_foreground_material_dark</item>
         <item name="android:textColorHighlight">@color/highlighted_text_material_light</item>
-        <item name="android:textColorLink">@color/link_text_material_light</item>
+        <item name="android:textColorLink">?attr/colorAccent</item>
 
         <!-- Text styles -->
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
@@ -1494,7 +1752,8 @@
         <item name="android:listChoiceIndicatorSingle">@drawable/abc_btn_radio_material</item>
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
-    <style name="Platform.ThemeOverlay.AppCompat.Dark" parent="">
+    <style name="Platform.ThemeOverlay.AppCompat" parent=""/>
+    <style name="Platform.ThemeOverlay.AppCompat.Dark">
         <!-- Action Bar styles -->
         <item name="actionBarItemBackground">@drawable/abc_item_background_holo_dark</item>
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Spinner.DropDown.ActionBar</item>
@@ -1504,7 +1763,7 @@
         <item name="android:autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
-    <style name="Platform.ThemeOverlay.AppCompat.Light" parent="">
+    <style name="Platform.ThemeOverlay.AppCompat.Light">
         <item name="actionBarItemBackground">@drawable/abc_item_background_holo_light</item>
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_light</item>
@@ -1513,6 +1772,7 @@
         <item name="android:autoCompleteTextViewStyle">@style/Widget.AppCompat.Light.AutoCompleteTextView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
+    <style name="Platform.Widget.AppCompat.Spinner" parent="android:Widget.Spinner"/>
     <style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="Base.DialogWindowTitle.AppCompat">
     </style>
     <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="android:Widget">
@@ -1555,9 +1815,19 @@
     <style name="RtlOverlay.Widget.AppCompat.SearchView.MagIcon" parent="android:Widget">
         <item name="android:layout_marginLeft">@dimen/abc_dropdownitem_text_padding_left</item>
     </style>
-    <style name="RtlOverlay.Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation">
-        <item name="android:paddingLeft">@dimen/abc_action_bar_navigation_padding_start_material</item>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-core/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="TextAppearance.AlertDialogPro" parent="android:TextAppearance"/>
+    <style name="TextAppearance.AlertDialogPro.DialogWindowTitle">
+        <item name="android:textSize">18sp</item>
     </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-theme-material/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="TextAppearance.AlertDialogPro.Material.DialogWindowTitle" parent="TextAppearance.AppCompat.Title"/>
+    <style name="TextAppearance.AlertDialogPro.Material.ListChoice" parent="TextAppearance.AppCompat.Medium"/>
+    <style name="TextAppearance.AlertDialogPro.Material.Subhead" parent="TextAppearance.AppCompat.Subhead"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>
     <style name="TextAppearance.AppCompat.Body2" parent="Base.TextAppearance.AppCompat.Body2"/>
@@ -1592,12 +1862,10 @@
     <style name="TextAppearance.AppCompat.Title.Inverse" parent="Base.TextAppearance.AppCompat.Title.Inverse"/>
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu">
     </style>
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
-    </style>
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle"/>
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse">
     </style>
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
-    </style>
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title"/>
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
     </style>
     <style name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle" parent="Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle">
@@ -1606,6 +1874,8 @@
     <style name="TextAppearance.AppCompat.Widget.ActionMode.Title" parent="Base.TextAppearance.AppCompat.Widget.ActionMode.Title">
     </style>
     <style name="TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse" parent="TextAppearance.AppCompat.Widget.ActionMode.Title"/>
+    <style name="TextAppearance.AppCompat.Widget.Button" parent="Base.TextAppearance.AppCompat.Widget.Button"/>
+    <style name="TextAppearance.AppCompat.Widget.Button.Inverse" parent="Base.TextAppearance.AppCompat.Widget.Button.Inverse"/>
     <style name="TextAppearance.AppCompat.Widget.DropDownItem" parent="Base.TextAppearance.AppCompat.Widget.DropDownItem">
     </style>
     <style name="TextAppearance.AppCompat.Widget.PopupMenu.Large" parent="Base.TextAppearance.AppCompat.Widget.PopupMenu.Large">
@@ -1625,6 +1895,30 @@
     </style>
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Title" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
     </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-core/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Theme.AlertDialogPro" parent="Base.Theme.AlertDialogPro">
+        <item name="adpButtonBarPositiveButtonStyle">?attr/adpButtonBarButtonStyle</item>
+        <item name="adpButtonBarNegativeButtonStyle">?attr/adpButtonBarButtonStyle</item>
+        <item name="adpButtonBarNeutralButtonStyle">?attr/adpButtonBarButtonStyle</item>
+    </style>
+    <style name="Theme.AlertDialogPro.Light" parent="Base.Theme.AlertDialogPro.Light">
+        <item name="adpButtonBarPositiveButtonStyle">?attr/adpButtonBarButtonStyle</item>
+        <item name="adpButtonBarNegativeButtonStyle">?attr/adpButtonBarButtonStyle</item>
+        <item name="adpButtonBarNeutralButtonStyle">?attr/adpButtonBarButtonStyle</item>
+    </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-theme-material/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Theme.AlertDialogPro.Material" parent="Base.Theme.AlertDialogPro.Material">
+        <item name="android:listChoiceIndicatorSingle">@drawable/abc_btn_radio_material</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
+    </style>
+    <style name="Theme.AlertDialogPro.Material.Light" parent="Base.Theme.AlertDialogPro.Material.Light">
+        <item name="android:listChoiceIndicatorSingle">@drawable/abc_btn_radio_material</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
+    </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="Theme.AppCompat" parent="Base.Theme.AppCompat"/>
     <style name="Theme.AppCompat.CompactMenu" parent="Base.Theme.AppCompat.CompactMenu"/>
     <style name="Theme.AppCompat.Dialog" parent="Base.Theme.AppCompat.Dialog"/>
@@ -1679,7 +1973,7 @@
         <item name="mediaRoutePlayDrawable">@drawable/mr_ic_play_light</item>
         <item name="mediaRoutePauseDrawable">@drawable/mr_ic_pause_light</item>
     </style>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
@@ -1725,7 +2019,19 @@
         <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
         <item name="maskedWalletDetailsLogoImageType">google_wallet_classic</item>
     </style>
-    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-core/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Widget.AlertDialogPro" parent="android:Widget"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.github.fengdai/alertdialogpro-theme-material/0.2.4/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Widget.AlertDialogPro.Material.Button" parent="Base.Widget.AlertDialogPro.Material.Button"/>
+    <style name="Widget.AlertDialogPro.Material.ButtonBar" parent="">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="Widget.AlertDialogPro.Material.Light.Button" parent="Base.Widget.AlertDialogPro.Material.Light.Button"/>
+    <style name="Widget.AlertDialogPro.Material.Light.ListView" parent="Base.Widget.AlertDialogPro.Light.ListView"/>
+    <style name="Widget.AlertDialogPro.Material.ListView" parent="Base.Widget.AlertDialogPro.ListView"/>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
@@ -1750,6 +2056,7 @@
     <style name="Widget.AppCompat.Button.Borderless" parent="Base.Widget.AppCompat.Button.Borderless"/>
     <style name="Widget.AppCompat.Button.Borderless.Colored" parent="Base.Widget.AppCompat.Button.Borderless.Colored"/>
     <style name="Widget.AppCompat.Button.ButtonBar.AlertDialog" parent="Base.Widget.AppCompat.Button.ButtonBar.AlertDialog"/>
+    <style name="Widget.AppCompat.Button.Colored" parent="Base.Widget.AppCompat.Button.Colored"/>
     <style name="Widget.AppCompat.Button.Small" parent="Base.Widget.AppCompat.Button.Small"/>
     <style name="Widget.AppCompat.ButtonBar" parent="Base.Widget.AppCompat.ButtonBar"/>
     <style name="Widget.AppCompat.ButtonBar.AlertDialog" parent="Base.Widget.AppCompat.ButtonBar.AlertDialog"/>
@@ -1760,8 +2067,7 @@
         <item name="color">?attr/colorControlNormal</item>
     </style>
     <style name="Widget.AppCompat.DropDownItem.Spinner" parent="RtlOverlay.Widget.AppCompat.Search.DropDown.Text"/>
-    <style name="Widget.AppCompat.EditText" parent="Base.Widget.AppCompat.EditText">
-    </style>
+    <style name="Widget.AppCompat.EditText" parent="Base.Widget.AppCompat.EditText"/>
     <style name="Widget.AppCompat.Light.ActionBar" parent="Base.Widget.AppCompat.Light.ActionBar">
     </style>
     <style name="Widget.AppCompat.Light.ActionBar.Solid" parent="Base.Widget.AppCompat.Light.ActionBar.Solid">
@@ -1813,11 +2119,11 @@
     <style name="Widget.AppCompat.SearchView.ActionBar" parent="Base.Widget.AppCompat.SearchView.ActionBar"/>
     <style name="Widget.AppCompat.Spinner" parent="Base.Widget.AppCompat.Spinner"/>
     <style name="Widget.AppCompat.Spinner.DropDown"/>
-    <style name="Widget.AppCompat.Spinner.DropDown.ActionBar" parent="Base.Widget.AppCompat.Spinner.DropDown.ActionBar"/>
+    <style name="Widget.AppCompat.Spinner.DropDown.ActionBar"/>
     <style name="Widget.AppCompat.Spinner.Underlined" parent="Base.Widget.AppCompat.Spinner.Underlined"/>
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
-    <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="RtlOverlay.Widget.AppCompat.Toolbar.Button.Navigation"/>
+    <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.MediaRouter.Light.MediaRouteButton" parent="Widget.AppCompat.Light.ActionButton">
