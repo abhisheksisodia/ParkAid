@@ -72,8 +72,8 @@ public class MainActivity extends SmartActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		startSmartServices(true);
 		getAppData().setApiKey("bf44571f-413b-4fd0-a37a-bb2a058b3c8d");
+		startSmartServices(false);
 		mTitle = mDrawerTitle = getTitle();
 
 		// load slide menu items
