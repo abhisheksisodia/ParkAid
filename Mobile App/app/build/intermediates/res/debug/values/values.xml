@@ -369,16 +369,18 @@
     <item name="cast_notification_id" type="id"/>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
     <eat-comment/>
-    <item name="db_blob_test" type="id"/>
-    <item name="db_kvp_SmartServicesState" type="id"/>
-    <item name="db_kvp_SmartWeatherCurLocWeatherReport" type="id"/>
-    <item name="db_kvp_TRNQL_SYSTEM" type="id"/>
-    <item name="db_kvp_test" type="id"/>
+    <item name="db_trnql_system" type="id"/>
     <item name="evt_ActivityHistory_added_activity" type="id"/>
     <item name="evt_ActivityHistory_switch_accuracy" type="id"/>
     <item name="evt_db_blob_change" type="id"/>
     <item name="evt_db_kvp_change" type="id"/>
     <item name="evt_debug" type="id"/>
+    <item name="evt_debug_string" type="id"/>
+    <item name="evt_invalid_api_key" type="id"/>
+    <item name="evt_payload_set" type="id"/>
+    <item name="evt_people_movement" type="id"/>
+    <item name="evt_places_movement" type="id"/>
+    <item name="evt_places_threshold_surpassed" type="id"/>
     <item name="evt_test" type="id"/>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
@@ -389,6 +391,8 @@
     <item name="op_SmartLocation_Address" type="id"/>
     <item name="op_SmartLocation_HighAccuracy" type="id"/>
     <item name="op_SmartLocation_Location" type="id"/>
+    <item name="op_SmartPeople" type="id"/>
+    <item name="op_SmartPlaces" type="id"/>
     <item name="op_SmartWeather_CurLoc_Address" type="id"/>
     <item name="op_SmartWeather_CurLoc_CurrentConditions" type="id"/>
     <item name="op_SmartWeather_CurLoc_Theaters" type="id"/>
@@ -435,6 +439,7 @@
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_connect">Connect</string>
+    <string name="action_disconnect">Disconnect</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">ParkAid</string>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/res/values/auth_strings.xml -->
@@ -496,6 +501,12 @@
     <string name="drawer_close">Slider Menu Closed</string>
     <string name="drawer_open">Slider Menu Opened</string>
     <string name="hello_world">Hello world!</string>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
+    <eat-comment/>
+    <string name="invalid_api_key_continue">Continue</string>
+    <string name="invalid_api_key_header">Adding a valid API key to your project allows you to see rich data and analytics that offer insight into how users are engaging with your application. \n\nIn addition, the trnql SDK requires an API key for uninterrupted usage.</string>
+    <string name="invalid_api_key_register">Register for Key</string>
+    <string name="invalid_api_key_title">Set the API Key</string>
     <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="mr_media_route_button_content_description">Cast</string>
@@ -589,6 +600,15 @@
         -->
         <item name="alertDialogProTheme">@style/Theme.AlertDialogPro.Material.Light</item>
     </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/build/intermediates/exploded-aar/com.trnql/lib-release/1.0.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#546E7A</item>
+        <item name="android:textColorPrimary">#37474F</item>
+        <item name="android:background">#B0BEC5</item>
+    </style>
+    <!-- From: file:/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile%20App/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
         <item name="alertDialogProTheme">@style/Theme.AlertDialogPro.Material.Light</item>

@@ -4,12 +4,19 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.bluetooth.BluetoothAdapter;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.Menu;
@@ -17,18 +24,37 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.parkaid.app.adapter.NavDrawerListAdapter;
 import com.parkaid.app.model.NavDrawerItem;
+import com.trnql.smart.base.SmartActivity;
 
 import java.util.ArrayList;
 
-public class MainActivity extends Activity {
+public class MainActivity extends SmartActivity {
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	private ActionBarDrawerToggle mDrawerToggle;
+	private boolean fallDetected = false;
+	private boolean	btEnabled = false;
 
-	private static final int REQUEST_CONNECT_DEVICE_SECURE = 1;
+	private static final int REQUEST_ENABLE_BT = 3;
+	// Tag for logging
+	private static final String TAG = "MainActivity";
+
+	// MAC address of remote Bluetooth device
+	// Replace this with the address of your own module
+	private final String address = "20:15:05:05:10:81";
+
+	// The thread that does all the work
+	BluetoothThread btt;
+
+	// Handler for writing messages to the Bluetooth connection
+	Handler writeHandler;
+
+	// Member fields
+	private BluetoothAdapter mBtAdapter;
 
 	// nav drawer title
 	private CharSequence mDrawerTitle;
@@ -46,6 +72,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		startSmartServices(true);
+		getAppData().setApiKey("bf44571f-413b-4fd0-a37a-bb2a058b3c8d");
 		mTitle = mDrawerTitle = getTitle();
 
 		// load slide menu items
@@ -95,6 +123,27 @@ public class MainActivity extends Activity {
 			// on first time display view for first nav item
 			displayView(0);
 		}
+
+		// Register mMessageReceiver to receive messages.
+		LocalBroadcastManager.getInstance(this).registerReceiver(mMessageReceiver,
+				new IntentFilter("fall-event"));
+	}
+
+	@Override
+	public void onResume() {
+		super.onResume();
+
+		// Register mMessageReceiver to receive messages.
+		LocalBroadcastManager.getInstance(this).registerReceiver(mMessageReceiver,
+				new IntentFilter("fall-event"));
+	}
+
+	@Override
+	protected void onPause() {
+		// Unregister since the activity is not visible
+		LocalBroadcastManager.getInstance(this).unregisterReceiver(mMessageReceiver);
+		fallDetected = false;
+		super.onPause();
 	}
 
 	/**
@@ -118,7 +167,6 @@ public class MainActivity extends Activity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem miExit) {
-		Intent serverIntent = null;
 		// toggle nav drawer on selecting action bar app icon/title
 		if (mDrawerToggle.onOptionsItemSelected(miExit)) {
 			return true;
@@ -126,12 +174,16 @@ public class MainActivity extends Activity {
 		// Handle action bar actions click
 		switch (miExit.getItemId()) {
 			case R.id.action_connect:
-				// Launch the DeviceListActivity to see devices and do scan
-				serverIntent = new Intent(this, DeviceListActivity.class);
-				startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_SECURE);
+				mBtAdapter = BluetoothAdapter.getDefaultAdapter();
+				checkBTState();
+				// Set result CANCELED in case the user backs out
+				setResult(Activity.RESULT_CANCELED);
+				if(btEnabled){
+					connectButtonPressed();
+				}
 				return true;
-			case R.id.action_settings:
-				finish();
+			case R.id.action_disconnect:
+				disconnectButtonPressed();
 				return true;
 			default:
 				return super.onOptionsItemSelected(miExit);
@@ -145,8 +197,7 @@ public class MainActivity extends Activity {
 	public boolean onPrepareOptionsMenu(Menu menu) {
 		// if nav drawer is opened, hide the action items
 		boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
-		menu.findItem(R.id.action_settings).setVisible(!drawerOpen);
-		return super.onPrepareOptionsMenu(menu);
+		return drawerOpen;
 	}
 
 	/**
@@ -163,7 +214,7 @@ public class MainActivity extends Activity {
             fragment = new IncidentLogsFragment();
 			break;
 		case 1:
-			fragment = new EmergencyListFragment();
+			fragment = new EmergencyListFragment().newInstance(fallDetected);
 			break;
             case 2:
                 fragment = new SettingsFragment();
@@ -213,6 +264,15 @@ public class MainActivity extends Activity {
 		}
 	}
 
+	// handler for received Intents for the "fall-event"
+	private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			fallDetected = true;
+			displayView(1);
+		}
+	};
+
 	@Override
 	public void setTitle(CharSequence title) {
 		mTitle = title;
@@ -236,5 +296,101 @@ public class MainActivity extends Activity {
 		super.onConfigurationChanged(newConfig);
 		// Pass any configuration change to the drawer toggls
 		mDrawerToggle.onConfigurationChanged(newConfig);
+	}
+
+	/**
+	 * Launch the Bluetooth thread.
+	 */
+	public void connectButtonPressed() {
+		Log.v(TAG, "Connect button pressed.");
+		Toast msg = Toast.makeText(getBaseContext(), "Connecting device", Toast.LENGTH_LONG);
+		msg.show();
+
+		// Only one thread at a time
+		if (btt != null) {
+			Log.w(TAG, "Already connected!");
+			Toast errmsg = Toast.makeText(getBaseContext(), "Already connected!", Toast.LENGTH_SHORT);
+			errmsg.show();
+			return;
+		}
+
+		// Initialize the Bluetooth thread, passing in a MAC address
+		// and a Handler that will receive incoming messages
+		btt = new BluetoothThread(address, new Handler() {
+
+			@Override
+			public void handleMessage(Message message) {
+
+				String s = (String) message.obj;
+
+				// Do something with the message
+				if (s.equals("CONNECTED")) {
+					Toast msg = Toast.makeText(getBaseContext(), "Device Connected", Toast.LENGTH_SHORT);
+					msg.show();
+				} else if (s.equals("DISCONNECTED")) {
+					Toast msg = Toast.makeText(getBaseContext(), "Device Disconnected", Toast.LENGTH_SHORT);
+					msg.show();
+				} else if (s.equals("CONNECTION FAILED")) {
+					Toast msg = Toast.makeText(getBaseContext(), "Connection Failed", Toast.LENGTH_SHORT);
+					msg.show();
+				} else {
+					if (!fallDetected) {
+						Intent intent = new Intent("fall-event");
+						LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
+					}
+				}
+			}
+		});
+
+		// Get the handler that is used to send messages
+		writeHandler = btt.getWriteHandler();
+
+		// Run the thread
+		btt.start();
+	}
+
+	/**
+	 * Kill the Bluetooth thread.
+	 */
+	public void disconnectButtonPressed() {
+		if(btt != null) {
+			btt.interrupt();
+			btt = null;
+		}
+	}
+
+	private void checkBTState() {
+		// Check for Bluetooth support and then check to make sure it is turned on
+		// Emulator doesn't support Bluetooth and will return null
+		if(mBtAdapter == null) {
+			Toast msg = Toast.makeText(getBaseContext(), "Fatal Error" + " - " + "Bluetooth Not supported. Aborting.", Toast.LENGTH_SHORT);
+			msg.show();
+		} else {
+			if (mBtAdapter.isEnabled()) {
+				Toast msg = Toast.makeText(getBaseContext(), "Bluetooth is Enabled", Toast.LENGTH_SHORT);
+				msg.show();
+				btEnabled = true;
+			} else {
+				//Prompt user to turn on Bluetooth
+				Intent enableBtIntent = new Intent(mBtAdapter.ACTION_REQUEST_ENABLE);
+				startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+			}
+		}
+	}
+
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		switch (requestCode) {
+			case REQUEST_ENABLE_BT:
+				if (resultCode == Activity.RESULT_OK) {
+					Toast msg = Toast.makeText(getBaseContext(), "Connecting device", Toast.LENGTH_LONG);
+					msg.show();
+					btEnabled = true;
+					connectButtonPressed();
+				}
+				else if (resultCode == Activity.RESULT_CANCELED) {
+					Toast msg = Toast.makeText(getBaseContext(), "Unable to connect. Bluetooth is off", Toast.LENGTH_LONG);
+					msg.show();
+				}
+		}
 	}
 }

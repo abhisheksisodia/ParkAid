@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/nazmul/Downloads/TRNQL_SDK/lib/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/dustin/Downloads/TRNQL_SDK/lib/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="buttonWidth">150dp</dimen>
     <dimen name="listRowIconSize">48dp</dimen>
@@ -9,23 +9,27 @@
     <dimen name="textSizeLarge">18sp</dimen>
     <dimen name="textSizeMedium">15.5sp</dimen>
     <dimen name="textSizeSmall">12sp</dimen>
-    <!-- From: file:/Users/nazmul/Downloads/TRNQL_SDK/lib/src/main/res/values/zenframeworkids.xml -->
+    <!-- From: file:/Users/dustin/Downloads/TRNQL_SDK/lib/src/main/res/values/zenframeworkids.xml -->
     <eat-comment/>
-    <item name="db_blob_test" type="id"/>
-    <item name="db_kvp_SmartServicesState" type="id"/>
-    <item name="db_kvp_SmartWeatherCurLocWeatherReport" type="id"/>
-    <item name="db_kvp_TRNQL_SYSTEM" type="id"/>
-    <item name="db_kvp_test" type="id"/>
+    <item name="db_trnql_system" type="id"/>
     <item name="evt_ActivityHistory_added_activity" type="id"/>
     <item name="evt_ActivityHistory_switch_accuracy" type="id"/>
     <item name="evt_db_blob_change" type="id"/>
     <item name="evt_db_kvp_change" type="id"/>
     <item name="evt_debug" type="id"/>
+    <item name="evt_debug_string" type="id"/>
+    <item name="evt_invalid_api_key" type="id"/>
+    <item name="evt_payload_set" type="id"/>
+    <item name="evt_people_movement" type="id"/>
+    <item name="evt_places_movement" type="id"/>
+    <item name="evt_places_threshold_surpassed" type="id"/>
     <item name="evt_test" type="id"/>
     <item name="op_SmartActivity_UserActivity" type="id"/>
     <item name="op_SmartLocation_Address" type="id"/>
     <item name="op_SmartLocation_HighAccuracy" type="id"/>
     <item name="op_SmartLocation_Location" type="id"/>
+    <item name="op_SmartPeople" type="id"/>
+    <item name="op_SmartPlaces" type="id"/>
     <item name="op_SmartWeather_CurLoc_Address" type="id"/>
     <item name="op_SmartWeather_CurLoc_CurrentConditions" type="id"/>
     <item name="op_SmartWeather_CurLoc_Theaters" type="id"/>
@@ -33,8 +37,19 @@
     <item name="op_SmartWeather_CurLoc_WeeklyForecast" type="id"/>
     <item name="op_SmartWeather_CurLoc_WikiArticles" type="id"/>
     <item name="op_test" type="id"/>
-    <!-- From: file:/Users/nazmul/Downloads/TRNQL_SDK/lib/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/dustin/Downloads/TRNQL_SDK/lib/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="invalid_api_key_continue">Continue</string>
+    <string name="invalid_api_key_header">Adding a valid API key to your project allows you to see rich data and analytics that offer insight into how users are engaging with your application. \n\nIn addition, the trnql SDK requires an API key for uninterrupted usage.</string>
+    <string name="invalid_api_key_register">Register for Key</string>
+    <string name="invalid_api_key_title">Set the API Key</string>
+    <!-- From: file:/Users/dustin/Downloads/TRNQL_SDK/lib/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#546E7A</item>
+        <item name="android:textColorPrimary">#37474F</item>
+        <item name="android:background">#B0BEC5</item>
+    </style>
     <style name="CenterMediumText" parent="MediumText">
         <item name="android:gravity">center</item>
     </style>
