@@ -1,23 +1,21 @@
 package com.parkaid.app;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.bluetooth.BluetoothAdapter;
 import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
-import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.widget.DrawerLayout;
+import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,24 +25,43 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.parkaid.app.adapter.NavDrawerListAdapter;
+import com.parkaid.app.adapter.UserAdapter;
+import com.parkaid.app.model.DatabaseHandler;
 import com.parkaid.app.model.NavDrawerItem;
+import com.parkaid.app.model.User;
 import com.trnql.smart.base.SmartActivity;
+import com.trnql.smart.location.AddressEntry;
 
 import java.util.ArrayList;
 
 public class MainActivity extends SmartActivity {
-	private DrawerLayout mDrawerLayout;
-	private ListView mDrawerList;
-	private ActionBarDrawerToggle mDrawerToggle;
-	private boolean fallDetected = false;
-	private boolean	btEnabled = false;
-
-	private static final int REQUEST_ENABLE_BT = 3;
 	// Tag for logging
 	private static final String TAG = "MainActivity";
 
-	// MAC address of remote Bluetooth device
-	// Replace this with the address of your own module
+	private DrawerLayout mDrawerLayout;
+	private ListView mDrawerList;
+	private ActionBarDrawerToggle mDrawerToggle;
+	// nav drawer title
+	private CharSequence mDrawerTitle;
+
+	// used to store app title
+	private CharSequence mTitle;
+
+	// slide menu items
+	private String[] navMenuTitles;
+
+	private ArrayList<NavDrawerItem> navDrawerItems;
+	private NavDrawerListAdapter adapter;
+
+	//For Sending messages
+	public DatabaseHandler db;
+	public ArrayList<User> arrayOfUsers;
+	public String userLocation;
+
+	//Bluetooth Related
+	private static final int REQUEST_ENABLE_BT = 3;
+	private boolean fallDetected = false;
+	private boolean	btEnabled = false;
 	private final String address = "20:15:05:05:10:81";
 
 	// The thread that does all the work
@@ -55,18 +72,6 @@ public class MainActivity extends SmartActivity {
 
 	// Member fields
 	private BluetoothAdapter mBtAdapter;
-
-	// nav drawer title
-	private CharSequence mDrawerTitle;
-
-	// used to store app title
-	private CharSequence mTitle;
-
-	// slide menu items
-	private String[] navMenuTitles;
-
-    private ArrayList<NavDrawerItem> navDrawerItems;
-	private NavDrawerListAdapter adapter;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -206,47 +211,20 @@ public class MainActivity extends SmartActivity {
 	public void displayView(int position) {
 		// update the main content by replacing fragments
 		Fragment fragment = null;
-		ConnectivityManager cm = (ConnectivityManager)MainActivity.this.getSystemService(Activity.CONNECTIVITY_SERVICE);
 
-    	if(cm != null && cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnected()){
 		switch (position) {
-		case 0:
-            fragment = new IncidentLogsFragment();
-			break;
-		case 1:
-			fragment = new EmergencyListFragment().newInstance(fallDetected);
-			break;
-            case 2:
+			case 0:
+            	fragment = new IncidentLogsFragment();
+				break;
+			case 1:
+				fragment = new EmergencyListFragment();
+				break;
+			case 2:
                 fragment = new SettingsFragment();
                 break;
 		default:
 			break;
-			}
-    	}
-	    else{
-	        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
-	 
-				// set title
-				alertDialogBuilder.setTitle("Internet Disconnected");
-	 
-				// set dialog message
-				alertDialogBuilder
-					.setMessage("Please check internet connection and try again")
-					.setCancelable(false)
-					.setNegativeButton("Ok",new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog,int id) {
-							// if this button is clicked, just close
-							// the dialog box and do nothing
-							dialog.cancel();
-						}
-					});
-	 
-					// create alert dialog
-					AlertDialog alertDialog = alertDialogBuilder.create();
-	
-					// show it
-					alertDialog.show();   
-	    }
+		}
     	
 		if (fragment != null) {
 			FragmentManager fragmentManager = getFragmentManager();
@@ -263,15 +241,6 @@ public class MainActivity extends SmartActivity {
 			Log.e("MainActivity", "Error in creating fragment");
 		}
 	}
-
-	// handler for received Intents for the "fall-event"
-	private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
-		@Override
-		public void onReceive(Context context, Intent intent) {
-			fallDetected = true;
-			displayView(1);
-		}
-	};
 
 	@Override
 	public void setTitle(CharSequence title) {
@@ -335,6 +304,7 @@ public class MainActivity extends SmartActivity {
 					msg.show();
 				} else {
 					if (!fallDetected) {
+						fallDetected = true;
 						Intent intent = new Intent("fall-event");
 						LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
 					}
@@ -393,4 +363,37 @@ public class MainActivity extends SmartActivity {
 				}
 		}
 	}
+
+	// handler for received Intents for the "fall-event"
+	private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			db = new DatabaseHandler(getApplicationContext());
+			// Reading all emergency contacts
+			ArrayList<User> contacts = db.getAllContacts();
+			arrayOfUsers = contacts;
+
+			if(fallDetected){
+				for (User user: arrayOfUsers) {
+					String phoneNo = user.getPhoneNumber();
+					try {
+						SmsManager smsManager = SmsManager.getDefault();
+						smsManager.sendTextMessage(phoneNo, null, "Your friend needs help! The user is located at " + userLocation + "- ParkAid App", null, null);
+					} catch (Exception e) {
+						Toast.makeText(getApplicationContext(),
+								"Sms Failed!",
+								Toast.LENGTH_LONG).show();
+						e.printStackTrace();
+					}
+				}
+			}
+			fallDetected = false;
+		}
+	};
+
+	@Override
+	protected void smartAddressChange(AddressEntry address) {
+		userLocation = address.toString();
+	}
+
 }

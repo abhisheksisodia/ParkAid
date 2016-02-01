@@ -7,7 +7,6 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-import android.telephony.SmsManager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,7 +15,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.parkaid.app.adapter.UserAdapter;
 import com.parkaid.app.model.DatabaseHandler;
@@ -35,22 +33,9 @@ public class EmergencyListFragment extends SmartFragment {
     public ListView listview;
     static final int PICK_CONTACT_REQUEST = 1;  // The request code
     public String userLocation;
-    private boolean fallDetected;
-
-    public static EmergencyListFragment newInstance(Boolean fallDetected){
-        EmergencyListFragment myFragment = new EmergencyListFragment();
-
-        Bundle args = new Bundle();
-        args.putBoolean("falldetected", fallDetected);
-        myFragment.setArguments(args);
-
-        return myFragment;
-    }
 
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
         setHasOptionsMenu(true);
-        fallDetected = getArguments().getBoolean("falldetected");
-
         ViewGroup mainView = (ViewGroup) inflater.inflate(R.layout.fragment_emergency, container, false);
 
         db = new DatabaseHandler(getActivity());
@@ -65,21 +50,6 @@ public class EmergencyListFragment extends SmartFragment {
         listview = (ListView) mainView.findViewById(R.id.ListView);
         adapter = new UserAdapter(getActivity(), arrayOfUsers);
         listview.setAdapter(adapter);
-
-        if(fallDetected){
-            for (User user: arrayOfUsers) {
-                String phoneNo = user.getPhoneNumber();
-                try {
-                    SmsManager smsManager = SmsManager.getDefault();
-                    smsManager.sendTextMessage(phoneNo, null, "Your friend needs help! The user is located at " + userLocation + "- ParkAid App", null, null);
-                } catch (Exception e) {
-                    Toast.makeText(getActivity().getApplicationContext(),
-                            "Sms Failed!",
-                            Toast.LENGTH_LONG).show();
-                    e.printStackTrace();
-                }
-            }
-        }
 
         listview.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 
