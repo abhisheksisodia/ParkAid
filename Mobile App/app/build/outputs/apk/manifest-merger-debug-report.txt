@@ -112,6 +112,7 @@ MERGED from com.github.fengdai:alertdialogpro-theme-material:0.2.4:8:5
 MERGED from com.github.fengdai:alertdialogpro-core:0.2.4:8:5
 MERGED from com.android.support:appcompat-v7:23.0.0:20:5
 MERGED from com.android.support:support-v4:23.0.0:20:5
+MERGED from net.the4thdimension:audio-wife:1.0.3:7:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:9:9
 		INJECTED from AndroidManifest.xml:0:0
@@ -303,6 +304,7 @@ MERGED from com.github.blackfizz:eazegraph:1.2.2:11:5
 MERGED from com.akexorcist:bluetoothspp:1.0.0:10:5
 MERGED from com.android.support:appcompat-v7:23.0.0:22:5
 MERGED from com.android.support:support-v4:23.0.0:22:5
+MERGED from net.the4thdimension:audio-wife:1.0.3:11:5
 	android:label
 		ADDED from AndroidManifest.xml:31:9
 	android:allowBackup

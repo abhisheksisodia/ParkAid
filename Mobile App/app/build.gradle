@@ -32,4 +32,5 @@ dependencies {
     compile 'com.google.code.gson:gson:+'
     compile 'com.akexorcist:bluetoothspp:1.0.0'
     compile 'com.github.fengdai:alertdialogpro-theme-material:0.2.4'
+    compile 'net.the4thdimension:audio-wife:1.0.3'
 }

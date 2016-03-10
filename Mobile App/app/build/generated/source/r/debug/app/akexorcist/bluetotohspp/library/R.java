@@ -12,10 +12,10 @@ public final class R {
 		public static final int bluetooth_spp_text_size = 0x7f0b0049;
 	}
 	public static final class id {
-		public static final int button_scan = 0x7f0c00a1;
+		public static final int button_scan = 0x7f0c00a6;
 	}
 	public static final class layout {
-		public static final int device_list = 0x7f030020;
-		public static final int device_name = 0x7f030021;
+		public static final int device_list = 0x7f030021;
+		public static final int device_name = 0x7f030022;
 	}
 }

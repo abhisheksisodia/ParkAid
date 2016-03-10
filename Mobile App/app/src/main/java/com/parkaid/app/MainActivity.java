@@ -3,13 +3,17 @@ package com.parkaid.app;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.bluetooth.BluetoothAdapter;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -20,6 +24,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -33,10 +38,14 @@ import com.parkaid.app.model.User;
 import com.trnql.smart.base.SmartActivity;
 import com.trnql.smart.location.AddressEntry;
 
+import java.io.File;
+import java.net.URI;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+
+import nl.changer.audiowife.AudioWife;
 
 public class MainActivity extends SmartActivity {
 	// Tag for logging
@@ -76,6 +85,9 @@ public class MainActivity extends SmartActivity {
 
 	// Member fields
 	private BluetoothAdapter mBtAdapter;
+
+	private MediaPlayer mPlayer;
+	private ViewGroup mPlayerContainer;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -136,6 +148,7 @@ public class MainActivity extends SmartActivity {
 		// Register mMessageReceiver to receive messages.
 		LocalBroadcastManager.getInstance(this).registerReceiver(mMessageReceiver,
 				new IntentFilter("fall-event"));
+		mPlayerContainer = (ViewGroup) findViewById(R.id.player_layout);
 	}
 
 	@Override
@@ -152,6 +165,8 @@ public class MainActivity extends SmartActivity {
 		// Unregister since the activity is not visible
 		LocalBroadcastManager.getInstance(this).unregisterReceiver(mMessageReceiver);
 		fallDetected = false;
+		AudioWife.getInstance().release();
+
 		super.onPause();
 	}
 
@@ -192,7 +207,19 @@ public class MainActivity extends SmartActivity {
 				}
 				return true;
 			case R.id.action_disconnect:
-				disconnectButtonPressed();
+//				disconnectButtonPressed();
+				// Create fragment
+				AudioFeedbackFragment newFragment = new AudioFeedbackFragment();
+
+				FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+				// Replace whatever is in the fragment_container view with this fragment,
+				// and add the transaction to the back stack so the user can navigate back
+				transaction.replace(R.id.frame_container, newFragment);
+				transaction.addToBackStack(null);
+
+				// Commit the transaction
+				transaction.commit();
 				return true;
 			default:
 				return super.onOptionsItemSelected(miExit);
