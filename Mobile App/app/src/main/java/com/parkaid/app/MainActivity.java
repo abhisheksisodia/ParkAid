@@ -27,12 +27,16 @@ import android.widget.Toast;
 import com.parkaid.app.adapter.NavDrawerListAdapter;
 import com.parkaid.app.adapter.UserAdapter;
 import com.parkaid.app.model.DatabaseHandler;
+import com.parkaid.app.model.GaitData;
 import com.parkaid.app.model.NavDrawerItem;
 import com.parkaid.app.model.User;
 import com.trnql.smart.base.SmartActivity;
 import com.trnql.smart.location.AddressEntry;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class MainActivity extends SmartActivity {
 	// Tag for logging
@@ -60,7 +64,7 @@ public class MainActivity extends SmartActivity {
 
 	//Bluetooth Related
 	private static final int REQUEST_ENABLE_BT = 3;
-	private boolean fallDetected = false;
+	private boolean fallDetected;
 	private boolean	btEnabled = false;
 	private final String address = "20:15:05:05:10:81";
 
@@ -305,6 +309,8 @@ public class MainActivity extends SmartActivity {
 				} else {
 					if (!fallDetected) {
 						fallDetected = true;
+						Toast msg = Toast.makeText(getBaseContext(), "Fall Detected", Toast.LENGTH_SHORT);
+						msg.show();
 						Intent intent = new Intent("fall-event");
 						LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
 					}
@@ -386,6 +392,9 @@ public class MainActivity extends SmartActivity {
 						e.printStackTrace();
 					}
 				}
+				DateFormat df = new SimpleDateFormat("dd/MM/yyyy, HH:mm");
+				String date = df.format(Calendar.getInstance().getTime());
+				db.addEvent(new GaitData("Fall event", userLocation, date));
 			}
 			fallDetected = false;
 		}

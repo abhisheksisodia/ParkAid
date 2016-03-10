@@ -22,7 +22,7 @@
 /Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-2ff3127195cf1613a876a00b7a71335338461a44.jar
 /Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-e2174e59aaa2ed880610cf726ce847e9cd624baa.jar
 /Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-a433c754a6d45fb78bd1d188fcad3f64e0a52cad.jar
-/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/gson-2.5-546766c25bce8b9309fc052397072c9007fbea88.jar
+/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/gson-2.6.2-e71614cd100dd2ca0356183bc8695d3d005d8234.jar
 /Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-9e95fdb55ca711d60bc253e32c86579b0d944395.jar
 /Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-906aea8d43e340d3e05f3cff51d4a20879b41e4c.jar
 /Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-fb1f007cf900fb39d25ef792dcfc24db8b87a459.jar

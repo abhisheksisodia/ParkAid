@@ -1,6 +1,7 @@
 package com.parkaid.app;
 
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -52,8 +53,18 @@ public class IncidentLogsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, final View view,
                                     int position, long id) {
-                Toast toast = Toast.makeText(getActivity(), "This will give a list of logs", Toast.LENGTH_SHORT);
-                toast.show();
+                // Create fragment
+                EventListFragment newFragment = new EventListFragment();
+
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+                // Replace whatever is in the fragment_container view with this fragment,
+                // and add the transaction to the back stack so the user can navigate back
+                transaction.replace(R.id.frame_container, newFragment);
+                transaction.addToBackStack(null);
+
+                // Commit the transaction
+                transaction.commit();
             }
         });
 
