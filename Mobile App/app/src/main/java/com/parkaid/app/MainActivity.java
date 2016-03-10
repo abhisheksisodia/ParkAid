@@ -207,19 +207,7 @@ public class MainActivity extends SmartActivity {
 				}
 				return true;
 			case R.id.action_disconnect:
-//				disconnectButtonPressed();
-				// Create fragment
-				AudioFeedbackFragment newFragment = new AudioFeedbackFragment();
-
-				FragmentTransaction transaction = getFragmentManager().beginTransaction();
-
-				// Replace whatever is in the fragment_container view with this fragment,
-				// and add the transaction to the back stack so the user can navigate back
-				transaction.replace(R.id.frame_container, newFragment);
-				transaction.addToBackStack(null);
-
-				// Commit the transaction
-				transaction.commit();
+				disconnectButtonPressed();
 				return true;
 			default:
 				return super.onOptionsItemSelected(miExit);
@@ -419,9 +407,8 @@ public class MainActivity extends SmartActivity {
 						e.printStackTrace();
 					}
 				}
-				DateFormat df = new SimpleDateFormat("dd/MM/yyyy, HH:mm");
-				String date = df.format(Calendar.getInstance().getTime());
-				db.addEvent(new GaitData("Fall event", userLocation, date));
+				activateAudioFeedback();
+				storeEvent();
 			}
 			fallDetected = false;
 		}
@@ -432,4 +419,24 @@ public class MainActivity extends SmartActivity {
 		userLocation = address.toString();
 	}
 
+	public void activateAudioFeedback(){
+		// Create fragment
+		AudioFeedbackFragment newFragment = new AudioFeedbackFragment();
+
+		FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+		// Replace whatever is in the fragment_container view with this fragment,
+		// and add the transaction to the back stack so the user can navigate back
+		transaction.replace(R.id.frame_container, newFragment);
+		transaction.addToBackStack(null);
+
+		// Commit the transaction
+		transaction.commit();
+	}
+
+	public void storeEvent(){
+		DateFormat df = new SimpleDateFormat("dd/MM/yyyy, HH:mm");
+		String date = df.format(Calendar.getInstance().getTime());
+		db.addEvent(new GaitData("Fall event", userLocation, date));
+	}
 }

@@ -48,26 +48,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/parkaid/app/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="329" column="47" selection-start-line="329" selection-start-column="37" selection-end-line="329" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.66386557">
+              <caret line="440" column="5" selection-start-line="440" selection-start-column="5" selection-end-line="440" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3872#3889#0" expanded="true" />
                 <element signature="e#3946#3963#0" expanded="true" />
+                <element signature="e#12418#12419#0" expanded="true" />
+                <element signature="e#12458#12459#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AudioFeedbackFragment.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AudioFeedbackFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/parkaid/app/AudioFeedbackFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.8359375">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1551,9 +1555,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/parkaid/app/adapter/DataAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/parkaid/app/EventListFragment.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/parkaid/app/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/parkaid/app/AudioFeedbackFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_audio_feedback.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/parkaid/app/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -2445,18 +2449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/parkaid/app/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="329" column="47" selection-start-line="329" selection-start-column="37" selection-end-line="329" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3872#3889#0" expanded="true" />
-            <element signature="e#3946#3963#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_audio_feedback.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7183099">
@@ -2470,9 +2462,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/parkaid/app/AudioFeedbackFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8359375">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/parkaid/app/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66386557">
+          <caret line="440" column="5" selection-start-line="440" selection-start-column="5" selection-end-line="440" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3872#3889#0" expanded="true" />
+            <element signature="e#3946#3963#0" expanded="true" />
+            <element signature="e#12418#12419#0" expanded="true" />
+            <element signature="e#12458#12459#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
