@@ -74,6 +74,7 @@ public class MainActivity extends SmartActivity {
 	//Bluetooth Related
 	private static final int REQUEST_ENABLE_BT = 3;
 	private boolean fallDetected;
+	private boolean fogDetected;
 	private boolean	btEnabled = false;
 	private final String address = "20:15:05:05:10:81";
 
@@ -321,7 +322,7 @@ public class MainActivity extends SmartActivity {
 				} else if (s.equals("CONNECTION FAILED")) {
 					Toast msg = Toast.makeText(getBaseContext(), "Connection Failed", Toast.LENGTH_SHORT);
 					msg.show();
-				} else {
+				} else if (s.equals("FALL DETECTED")){
 					if (!fallDetected) {
 						fallDetected = true;
 						Toast msg = Toast.makeText(getBaseContext(), "Fall Detected", Toast.LENGTH_SHORT);
@@ -329,6 +330,16 @@ public class MainActivity extends SmartActivity {
 						Intent intent = new Intent("fall-event");
 						LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
 					}
+				} else if (s.equals("FOG DETECTED")) {
+					if (!fogDetected) {
+						fogDetected = true;
+						Toast msg = Toast.makeText(getBaseContext(), "Fog Detected", Toast.LENGTH_SHORT);
+						msg.show();
+						Intent intent = new Intent("fall-event");
+						LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
+					}
+				} else {
+					// do nothing
 				}
 			}
 		});
@@ -407,10 +418,17 @@ public class MainActivity extends SmartActivity {
 						e.printStackTrace();
 					}
 				}
+				storeFallEvent();
+			}
+			else if (fogDetected){
 				activateAudioFeedback();
-				storeEvent();
+				storeFogEvent();
+			} else {
+				fallDetected = false;
+				fogDetected = false;
 			}
 			fallDetected = false;
+			fogDetected = false;
 		}
 	};
 
@@ -434,9 +452,15 @@ public class MainActivity extends SmartActivity {
 		transaction.commit();
 	}
 
-	public void storeEvent(){
+	public void storeFallEvent(){
 		DateFormat df = new SimpleDateFormat("dd/MM/yyyy, HH:mm");
 		String date = df.format(Calendar.getInstance().getTime());
 		db.addEvent(new GaitData("Fall event", userLocation, date));
+	}
+
+	public void storeFogEvent(){
+		DateFormat df = new SimpleDateFormat("dd/MM/yyyy, HH:mm");
+		String date = df.format(Calendar.getInstance().getTime());
+		db.addEvent(new GaitData("Fog event", userLocation, date));
 	}
 }

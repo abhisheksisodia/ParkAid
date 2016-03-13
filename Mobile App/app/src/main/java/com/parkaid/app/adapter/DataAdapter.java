@@ -34,7 +34,7 @@ public class DataAdapter extends ArrayAdapter<GaitData> {
         TextView tvHome = (TextView) convertView.findViewById(R.id.userPhone);
         // Populate the data into the template view using the data object
         tvName.setText(gaitData.getEventType());
-        tvHome.setText("Address: " + gaitData.getEventLocation() + " Time:" + gaitData.getEventDate());
+        tvHome.setText("Address: " + gaitData.getEventLocation() + "  " + "Time: " + gaitData.getEventDate());
         // Return the completed view to render on screen
         return convertView;
     }

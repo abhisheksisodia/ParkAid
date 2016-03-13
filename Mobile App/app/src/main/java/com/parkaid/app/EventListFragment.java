@@ -30,7 +30,6 @@ public class EventListFragment extends SmartFragment {
     public String eventLocation;
 
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
-//        setHasOptionsMenu(true);
         ViewGroup mainView = (ViewGroup) inflater.inflate(R.layout.fragment_eventlist_list, container, false);
 
         db = new DatabaseHandler(getActivity());
@@ -48,35 +47,10 @@ public class EventListFragment extends SmartFragment {
         return mainView;
     }
 
-//    @Override
-//    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-//        super.onCreateOptionsMenu(menu, inflater);
-//        menu.add("ADD")
-//                .setOnMenuItemClickListener(this.mAddButtonClickListener)
-//                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-//
-//    }
-
     @Override
     protected void smartAddressChange(AddressEntry address) {
         eventLocation = address.toString();
     }
-
-//    MenuItem.OnMenuItemClickListener mAddButtonClickListener = new MenuItem.OnMenuItemClickListener() {
-//
-//        @Override
-//        public boolean onMenuItemClick(MenuItem item) {
-//
-//            DateFormat df = new SimpleDateFormat("dd/MM/yyyy, HH:mm");
-//            String date = df.format(Calendar.getInstance().getTime());
-//
-//            arrayOfEvents.add(new GaitData("Fall event", eventLocation, date));
-//            db.addEvent(new GaitData("Fall event", eventLocation, date));
-//            adapter = new DataAdapter(getActivity(), arrayOfEvents);
-//            listview.setAdapter(adapter);
-//            return true;
-//        }
-//    };
 }
 
 
