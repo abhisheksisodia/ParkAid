@@ -191,7 +191,7 @@ void loop() {
     fall_count = 0;
   }
     
-  if (kalAngleY < 0 && kalAngleX > 115) {
+  if (kalAngleY > -5 && kalAngleY < 5 && kalAngleX > 115) {
       neg_count++;
   } else {
       neg_count = 0;
@@ -200,18 +200,12 @@ void loop() {
   if(fall_count == 50){
       Serial.print("FALL DETECTED#");
       Serial.print("FALL DETECTED#");
-      Serial.print("FALL DETECTED#");
-      Serial.print("FALL DETECTED#");
-      Serial.print("FALL DETECTED#");
       fall_count = 0;
   }
   
-  if(neg_count == 75){
-      Serial.print("FOG DETECTED*");
-      Serial.print("FOG DETECTED*");
-      Serial.print("FOG DETECTED*");
-      Serial.print("FOG DETECTED*");
-      Serial.print("FOG DETECTED*");
+  if(neg_count == 50){
+      Serial.print("FOG DETECTED#");
+      Serial.print("FOG DETECTED#");
       neg_count = 0;
   }
 //  Serial.print(roll); Serial.print("\t");
