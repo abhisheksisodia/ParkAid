@@ -12,6 +12,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.parkaid.app.model.DatabaseHandler;
+import com.parkaid.app.model.GaitData;
+import com.parkaid.app.model.User;
+
 import org.eazegraph.lib.charts.BarChart;
 import org.eazegraph.lib.models.BarModel;
 
@@ -21,10 +25,13 @@ import java.util.List;
 
 public class IncidentLogsFragment extends Fragment {
 
+    public DatabaseHandler db;
+    public ArrayList<GaitData> arrayOfEvents;
+
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
         setHasOptionsMenu(true);
         ViewGroup mainView = (ViewGroup) inflater.inflate(R.layout.fragment_incident, container, false);
-
+        db = new DatabaseHandler(getActivity());
         BarChart mBarChart = (BarChart) mainView.findViewById(R.id.barchart);
 
         mBarChart.addBar(new BarModel("Mon", 2.3f, 0xFF123456));
@@ -48,23 +55,31 @@ public class IncidentLogsFragment extends Fragment {
                 android.R.layout.simple_list_item_1, list);
         listview.setAdapter(adapter);
 
+        ArrayList<GaitData> contacts = db.getAllEvents();
+        arrayOfEvents = contacts;
+
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, final View view,
                                     int position, long id) {
-                // Create fragment
-                EventListFragment newFragment = new EventListFragment();
 
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                if (arrayOfEvents.isEmpty()){
+                    Toast.makeText(getActivity(), "No Fog/Fall events yet!", Toast.LENGTH_SHORT).show();
+                } else {
+                    // Create fragment
+                    EventListFragment newFragment = new EventListFragment();
 
-                // Replace whatever is in the fragment_container view with this fragment,
-                // and add the transaction to the back stack so the user can navigate back
-                transaction.replace(R.id.frame_container, newFragment);
-                transaction.addToBackStack(null);
+                    FragmentTransaction transaction = getFragmentManager().beginTransaction();
 
-                // Commit the transaction
-                transaction.commit();
+                    // Replace whatever is in the fragment_container view with this fragment,
+                    // and add the transaction to the back stack so the user can navigate back
+                    transaction.replace(R.id.frame_container, newFragment);
+                    transaction.addToBackStack(null);
+
+                    // Commit the transaction
+                    transaction.commit();
+                }
             }
         });
 

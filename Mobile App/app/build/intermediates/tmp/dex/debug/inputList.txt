@@ -27,6 +27,7 @@
 /Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-9e95fdb55ca711d60bc253e32c86579b0d944395.jar
 /Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-906aea8d43e340d3e05f3cff51d4a20879b41e4c.jar
 /Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-fb1f007cf900fb39d25ef792dcfc24db8b87a459.jar
+/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/MPAndroidChart-v2.2.3-3337517654eb553f4fd0fed9dbfc5bcb0bcd94b1.jar
 /Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-d1bf6a8d0798ed4baf61acffe5a55be239f58242.jar
 /Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-8b455c5af5437c52e2bd3baf2455fc14b0ce5ce9.jar
 /Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-c67904b2ec61876f27d433c79b4e3c331e6d94b5.jar

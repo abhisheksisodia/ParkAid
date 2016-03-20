@@ -108,12 +108,12 @@ public final class R {
 		public static final int common_signin_btn_text_normal_light = 0x7f020066;
 		public static final int common_signin_btn_text_pressed_dark = 0x7f020067;
 		public static final int common_signin_btn_text_pressed_light = 0x7f020068;
-		public static final int ic_plusone_medium_off_client = 0x7f020133;
-		public static final int ic_plusone_small_off_client = 0x7f020134;
-		public static final int ic_plusone_standard_off_client = 0x7f020135;
-		public static final int ic_plusone_tall_off_client = 0x7f020136;
-		public static final int powered_by_google_dark = 0x7f02014b;
-		public static final int powered_by_google_light = 0x7f02014c;
+		public static final int ic_plusone_medium_off_client = 0x7f020134;
+		public static final int ic_plusone_small_off_client = 0x7f020135;
+		public static final int ic_plusone_standard_off_client = 0x7f020136;
+		public static final int ic_plusone_tall_off_client = 0x7f020137;
+		public static final int powered_by_google_dark = 0x7f02014c;
+		public static final int powered_by_google_light = 0x7f02014d;
 	}
 	public static final class id {
 		public static final int adjust_height = 0x7f0c004c;

@@ -198,6 +198,13 @@
         <dex dex="/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/classes-5b5ef2b1bb4861d68379896158bba1e659cffccc.jar" />
     </item>
     <item
+        jar="/Users/abhisheksisodia/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v2.2.3/f474798fde03291398b1a016118b9809a79550b7/MPAndroidChart-v2.2.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f474798fde03291398b1a016118b9809a79550b7">
+        <dex dex="/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/pre-dexed/debug/MPAndroidChart-v2.2.3-3337517654eb553f4fd0fed9dbfc5bcb0bcd94b1.jar" />
+    </item>
+    <item
         jar="/Users/abhisheksisodia/Documents/Development/University/ParkAid/Mobile App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.8.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"

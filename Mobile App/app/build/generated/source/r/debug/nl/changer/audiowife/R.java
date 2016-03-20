@@ -8,8 +8,8 @@ package nl.changer.audiowife;
 
 public final class R {
 	public static final class drawable {
-		public static final int gray_border_wo_padding = 0x7f02011c;
-		public static final int ic_launcher = 0x7f020126;
+		public static final int gray_border_wo_padding = 0x7f02011d;
+		public static final int ic_launcher = 0x7f020127;
 	}
 	public static final class id {
 		public static final int media_seekbar = 0x7f0c00a0;

@@ -1,12 +1,11 @@
 package com.parkaid.app;
 
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.parkaid.app.adapter.DataAdapter;
@@ -15,10 +14,7 @@ import com.parkaid.app.model.GaitData;
 import com.trnql.smart.base.SmartFragment;
 import com.trnql.smart.location.AddressEntry;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 
 public class EventListFragment extends SmartFragment {
 
@@ -44,6 +40,23 @@ public class EventListFragment extends SmartFragment {
         adapter = new DataAdapter(getActivity(), arrayOfEvents);
         listview.setAdapter(adapter);
 
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Create fragment
+                GraphFragment newFragment = new GraphFragment();
+
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+                // Replace whatever is in the fragment_container view with this fragment,
+                // and add the transaction to the back stack so the user can navigate back
+                transaction.replace(R.id.frame_container, newFragment);
+                transaction.addToBackStack(null);
+
+                // Commit the transaction
+                transaction.commit();
+            }
+        });
         return mainView;
     }
 
