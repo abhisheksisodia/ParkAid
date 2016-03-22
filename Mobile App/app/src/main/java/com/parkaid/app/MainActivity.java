@@ -98,6 +98,8 @@ public class MainActivity extends SmartActivity {
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		getAppData().setApiKey("bf44571f-413b-4fd0-a37a-bb2a058b3c8d");
 		startSmartServices(false);
+		db = new DatabaseHandler(getApplicationContext());
+
 		mTitle = mDrawerTitle = getTitle();
 
 		// load slide menu items
@@ -402,7 +404,6 @@ public class MainActivity extends SmartActivity {
 	private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			db = new DatabaseHandler(getApplicationContext());
 			// Reading all emergency contacts
 			ArrayList<User> contacts = db.getAllContacts();
 			arrayOfUsers = contacts;
@@ -455,13 +456,13 @@ public class MainActivity extends SmartActivity {
 	}
 
 	public void storeFallEvent(){
-		DateFormat df = new SimpleDateFormat("dd/MM/yyyy, HH:mm");
+		DateFormat df = new SimpleDateFormat("dd/MM/yyyy, hh:mm a");
 		String date = df.format(Calendar.getInstance().getTime());
 		db.addEvent(new GaitData("Fall event", userLocation, date));
 	}
 
 	public void storeFogEvent(){
-		DateFormat df = new SimpleDateFormat("dd/MM/yyyy, HH:mm");
+		DateFormat df = new SimpleDateFormat("dd/MM/yyyy, hh:mm a");
 		String date = df.format(Calendar.getInstance().getTime());
 		db.addEvent(new GaitData("Fog event", userLocation, date));
 	}

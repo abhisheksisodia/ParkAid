@@ -27,7 +27,7 @@
 
     <string-array name="feedback_types">
         <item>Audio Feedback</item>
-        <item>Video Feedback</item>
+        <item>Visual Feedback</item>
         <item>Audio-Visual Feedback</item>
     </string-array>
 

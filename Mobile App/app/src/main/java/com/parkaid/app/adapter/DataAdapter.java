@@ -27,14 +27,16 @@ public class DataAdapter extends ArrayAdapter<GaitData> {
         GaitData gaitData = getItem(position);
         // Check if an existing view is being reused, otherwise inflate the view
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.layout_listview_row, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.layout_listview_events, parent, false);
         }
         // Lookup view for data population
-        TextView tvName = (TextView) convertView.findViewById(R.id.userName);
-        TextView tvHome = (TextView) convertView.findViewById(R.id.userPhone);
+        TextView eventType = (TextView) convertView.findViewById(R.id.eventType);
+        TextView address = (TextView) convertView.findViewById(R.id.location);
+        TextView timestamp = (TextView) convertView.findViewById(R.id.timestamp);
         // Populate the data into the template view using the data object
-        tvName.setText(gaitData.getEventType());
-        tvHome.setText("Address: " + gaitData.getEventLocation() + "  " + "Time: " + gaitData.getEventDate());
+        eventType.setText(gaitData.getEventType());
+        address.setText("Location: " + gaitData.getEventLocation());
+        timestamp.setText(gaitData.getEventDate());
         // Return the completed view to render on screen
         return convertView;
     }

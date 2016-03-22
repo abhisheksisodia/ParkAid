@@ -66,13 +66,13 @@ public class GraphFragment extends Fragment {
         //xAxis.setValueFormatter(new MyCustomXAxisValueFormatter());
         //xAxis.addLimitLine(llXAxis); // add x-axis limit line
 
-        LimitLine ll1 = new LimitLine(100f, "Upper Limit");
+        LimitLine ll1 = new LimitLine(135f, "Upper Limit");
         ll1.setLineWidth(4f);
         ll1.enableDashedLine(10f, 10f, 0f);
         ll1.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT_TOP);
         ll1.setTextSize(10f);
 
-        LimitLine ll2 = new LimitLine(10f, "Lower Limit");
+        LimitLine ll2 = new LimitLine(35f, "Lower Limit");
         ll2.setLineWidth(4f);
         ll2.enableDashedLine(10f, 10f, 0f);
         ll2.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT_BOTTOM);
@@ -82,8 +82,8 @@ public class GraphFragment extends Fragment {
         leftAxis.removeAllLimitLines(); // reset all limit lines to avoid overlapping lines
         leftAxis.addLimitLine(ll1);
         leftAxis.addLimitLine(ll2);
-        leftAxis.setAxisMaxValue(150f);
-        leftAxis.setAxisMinValue(-50f);
+        leftAxis.setAxisMaxValue(180f);
+        leftAxis.setAxisMinValue(-20f);
         //leftAxis.setYOffset(20f);
         leftAxis.enableGridDashedLine(10f, 10f, 0f);
         leftAxis.setDrawZeroLine(false);
@@ -97,7 +97,7 @@ public class GraphFragment extends Fragment {
         //mChart.getViewPortHandler().setMaximumScaleX(2f);
 
         // add data
-        setData(45, 100);
+        setData(45, 35, 140);
 
 //        mChart.setVisibleXRange(20);
 //        mChart.setVisibleYRange(20f, AxisDependency.LEFT);
@@ -119,7 +119,7 @@ public class GraphFragment extends Fragment {
         return mainView;
     }
 
-    private void setData(int count, float range) {
+    private void setData(int count, float min, float max) {
 
         ArrayList<String> xVals = new ArrayList<String>();
         for (int i = 0; i < count; i++) {
@@ -130,8 +130,8 @@ public class GraphFragment extends Fragment {
 
         for (int i = 0; i < count; i++) {
 
-            float mult = (range + 1);
-            float val = (float) (Math.random() * mult) + 3;// + (float)
+            float range = (max - min);
+            float val = (float) (Math.random() * range) + min;// + (float)
             // ((mult *
             // 0.1) / 10);
             yVals.add(new Entry(val, i));

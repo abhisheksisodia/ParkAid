@@ -148,7 +148,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery(selectQuery, null);
 
         // looping through all rows and adding to list
-        if (cursor.moveToFirst()) {
+        if (cursor.moveToLast()) {
             do {
                 GaitData event = new GaitData();
                 event.setId(Integer.parseInt(cursor.getString(0)));
@@ -157,7 +157,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 event.setEventDate(cursor.getString(3));
 
                 eventList.add(event);
-            } while (cursor.moveToNext());
+            } while (cursor.moveToPrevious());
         }
 
 
