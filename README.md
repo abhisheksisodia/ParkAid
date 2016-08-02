@@ -8,3 +8,6 @@ The objective of this project is to develop a wearable device that predicts FOG 
 
 ## Mobile App
 The mobile application is a companion software application that connects to the wearable device and provides controls and functionality related to the wearable device. The mobile application connects to the device wirelessly(via bluetooth) and it provides the user, the ability to select between different types of feedback. The user can also check logs of freeze of gait and fall incidents through the mobile application. In case, the device is unable to predict the fall and provide feedback in time to prevent the fall, the mobile application automatically contacts the people on the emergency contacts list predefined by the user. The mobile application is also user friendly and the user can easily learn the functionality.
+
+## Screenshots
+[[https://github.com/abhisheksisodia/ParkAid/blob/master/Parkaid/screener_20160802(14_21_23).png|alt=octocat]]
